@@ -1,17 +1,112 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
+    <!-- CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="{{ url_for('static', filename='css/landing.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+        <!-- Hamburger Icon Dropdown -->
+        <div class="dropdown">
+            <div class="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="dropdown-content">
+                <a href="/info2">More Information</a>
+                <a href="/profile">View Account becuase its not mine</a>
+            </div>
+        </div>
         
-        <script src="" async defer></script>
-    </body>
+        <!-- Centered logo/message -->
+        <div class="logo">
+            AI HAS IT
+        </div>
+
+        <!-- Right-aligned login and signup buttons -->
+        <div class="nav-right">
+            <form action="{{ url_for('logout') }}" method="post">
+              <button type="submit" class="logout-btn">Logout</button>
+            </form>
+            <a href="/create" class="create-btn">Create +</a>
+            <a href="/profile" class="profile-btn">
+              <img src="{{ session['pfp'] }}" alt="Profile" class="profile-img">
+            </a>
+          
+        </div>
+    </div>
+  </header>
+
+  <!-- Search feature -->
+  <div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search for resources...">
+    <button class="search-btn" onclick="filterResources()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+
+
+  <div class="content-container">
+    {% for tool in tools %}
+    <div class="content-box">
+      <a href="{{ tool['weburl'] }}" class="resource-link">
+        <img src="{{ tool['image'] }}" alt="{{ tool['title'] }}" class="box-image">
+        <div class="box-text">
+          <h3>{{ tool['title'] }}</h3>
+          <p>{{ tool['description'] }}</p>
+          <p><b>{{ tool['category'] }}</b></p>
+        </div>
+      </a>
+      <div class="thumbs-container">
+        <!-- Like Form -->
+        <form action="/like" method="POST" style="display: inline;">
+          <input type="hidden" name="title" value="{{ tool['title'] }}">
+          <button type="submit" name="liked" value="true" class="like-button">
+            <i class="fas fa-thumbs-up thumbs-up"></i>
+          </button>
+          <span id="thumbs-up-count-{{ loop.index }}" class="counter">{{ tool['like_count'] }}</span>
+        </form>
+
+        <!-- Dislike Form -->
+        <form action="/like" method="POST" style="display: inline;">
+          <input type="hidden" name="title" value="{{ tool['title'] }}">
+          <button type="submit" name="liked" value="false" class="dislike-button">
+            <i class="fas fa-thumbs-down thumbs-down"></i>
+          </button>
+          <span id="thumbs-down-count-{{ loop.index }}" class="counter">{{ tool['dislike_count'] }}</span>
+        </form>
+      </div>
+      
+      <!-- Conditional Delete Button -->
+      {% if tool['is_creator'] %}
+      <form action="/Delete_Tool" method="POST" style="display: inline;">
+        <input type="hidden" name="title" value="{{ tool['title'] }}">
+        <button type="submit" name="delete" value="false" h class="delete-button">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    </form>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+  
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="{{ url_for('static', filename='js/index.js')}}"></script>
+</body>
+
 </html>
