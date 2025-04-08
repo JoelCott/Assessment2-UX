@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+/* .phone {
+    width: 350px;
+    height: 700px;
+    background-color: #d3d3d3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.phone::before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+} */
+
+
+.phone {
+    width: 350px;
+    height: 700px;
+    background-color: #d3d3d3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.scrollContainer{
+    justify-content: center;
+    margin-top: 80px;
+    width: 325px;
+    height: 325px;
+    overflow-x: hidden;
+    overflow-y:auto;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone::before {
+    content: "";
+    margin-left: 125px;
+    margin-right: auto;
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+.img{
+    width: 300px;
+    height:auto;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box1 {
+    grid-column-start: 1;
+    height:auto;
+    width:250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    background: cyan;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px green;
+    font-family: sans-serif;
+}
+
+.button:hover {
+    background: rgb(0, 255, 255, 0.8);
+}
