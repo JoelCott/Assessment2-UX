@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
     position: relative;
 }
 
@@ -35,15 +34,22 @@ h1 {
     font-size: 28px;
     font-weight: bold;
     text-decoration: underline;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.buttons-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .buttons-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-grow: 1;
 }
 
 .button {
