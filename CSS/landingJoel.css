@@ -90,6 +90,19 @@ body {
   .menu-button:hover {
     background-color: rgba(0, 229, 255, 0.8);
   }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .menu-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+  }
   
   .align-left1 {
     align-self: flex-start;
@@ -110,16 +123,68 @@ body {
     align-self: flex-end;
     margin-right: 20px;
   }
+
+  .align-right5 {
+    align-self: flex-start;
+    margin-left: 30px;
+  }
   
-  .signout-button {
+  #signout-button {
+    position: absolute;
+    top: 120px;
+    right: 25px;
     background-color: red;
     color: white;
-    align-self: center;
-    margin-top: 30px;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
   }
 
-  .signout-button:hover {
+  #signout-button:hover {
     background-color: rgb(202, 25, 25);
+    transform: scale(1.05);
+  }
+  
+
+  .bottom-buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .icon-button {
+    background-color: #00abbe;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s ease, transform 0.2s ease;
+  }
+  
+  .icon-button:hover {
+    background-color: rgba(0, 229, 255, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .bottom-left {
+    align-self: flex-start;
+  }
+  
+  .bottom-right {
+    align-self: flex-end;
   }
   
   
