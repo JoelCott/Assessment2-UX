@@ -32,7 +32,7 @@ body {
 
 .phone {
     width: 350px;
-    height: 700px;
+    height: 750px;
     background-color: #d3d3d3;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -120,8 +120,29 @@ h1 {
     box-shadow: 0 5px 5px green;
     font-family: sans-serif;
 }
+.status-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
 #buttonSO{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     background: rgb(255, 0, 0);
