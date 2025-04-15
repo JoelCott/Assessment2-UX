@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  a.button {
+    text-decoration: none;
+    color: inherit;
+  }  
+
+  .phone {
+    width: 350px;
+    height: 700px;
+    background-color: #d3d3d3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+  
+  .phone::before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .status-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  #time {
+    font-size: 18px;
+  }
+  
+  .logo-small {
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .menu-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .menu-button {
+    width: 180px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: cyan;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s smooth;
+  }
+  
+  .menu-button:hover {
+    background-color: rgba(0, 229, 255, 0.8);
+  }
+  
+  .align-left1 {
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+
+  .align-right2 {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+
+  .align-right3 {
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+  
+  .align-right4 {
+    align-self: flex-end;
+    margin-right: 20px;
+  }
+  
+  .signout-button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    margin-top: 30px;
+  }
+
+  .signout-button:hover {
+    background-color: rgb(202, 25, 25);
+  }
+  
+  

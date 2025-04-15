@@ -6,6 +6,11 @@ body {
     background-color: white;
     margin: 0;
   }
+
+  a.button {
+    text-decoration: none;
+    color: inherit;
+  }  
   
   .phone {
     width: 350px;
@@ -75,21 +80,25 @@ body {
   .button {
     width: 200px;
     padding: 15px;
-    border: none;
+    margin: 10px;
     background: cyan;
-    color: black;
     border-radius: 25px;
+    text-align: center;
     font-weight: bold;
     font-size: 18px;
-    font-family: sans-serif;
     cursor: pointer;
     box-shadow: 0 5px 5px green;
+    font-family: sans-serif;
     transition: background 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: black;
   }
   
   .button:hover {
     background: rgba(0, 255, 255, 0.8);
   }
+  
   
   .home-indicator {
     width: 100px;
