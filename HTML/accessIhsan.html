@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="/css/accessIhsan.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="phone">
+      <div class="status-bar">
+        <div id="time"><b>9:41</b></div>
+        <div class="icons">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+  
+      <div class="logo-small">ParkingPro</div>
+  
+      <div class="title-row">
+        <h1>Accessibility</h1>
+        <i class="fa-solid fa-person accessibility-icon"></i>
+      </div>
+      
+      <div class="scrollable-content">
+        <div class="accessibility-section">
+          <div class="section-title">Font Size</div>
+          <div class="font-size-controls">
+            <button id="font-increase">A+</button>
+            <button id="font-decrease">A-</button>
+          </div>
+  
+          <div class="section-title">Settings:</div>
+          <label class="toggle-label">
+            High Contrast
+            <input type="checkbox" id="contrast-toggle" class="toggle-input" />
+            <span class="toggle-slider"></span>
+          </label>
+  
+          <label class="toggle-label">
+            Voice Commands
+            <input type="checkbox" id="voice-toggle" class="toggle-input" />
+            <span class="toggle-slider"></span>
+          </label>
+  
+          <label class="toggle-label">
+            Vibration Feedback
+            <input type="checkbox" id="vibration-toggle" class="toggle-input" />
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  
+    <script src="/js/accessibility.js"></script>
+  </body>
+  
+  
+
+</html>
