@@ -1,26 +1,21 @@
-let fontSizeLevel = 0;
+  let currentSize = 16;
 
-const updateFontSize = () => {
-  const baseSize = 16;
-  const newSize = baseSize + fontSizeLevel * 2;
-  document.querySelector('.phone').style.fontSize = `${newSize}px`;
-};
+  const scrollableContent = document.querySelector('.scrollable-content');
 
-document.getElementById('font-increase').addEventListener('click', () => {
-  fontSizeLevel++;
-  updateFontSize();
-});
+  const applyFontSize = () => {
+    scrollableContent.querySelectorAll('*').forEach(el => {
+      el.style.fontSize = currentSize + 'px';
+    });
+  };
 
-document.getElementById('font-decrease').addEventListener('click', () => {
-  fontSizeLevel--;
-  updateFontSize();
-});
-
-// Visual-only toggles (no real effect yet)
-document.querySelectorAll('.toggle-input').forEach(toggle => {
-  toggle.addEventListener('change', (e) => {
-    const toggleState = e.target.checked;
-    console.log(`${e.target.id} is ${toggleState ? 'ON' : 'OFF'}`);
+  document.getElementById('font-increase').addEventListener('click', () => {
+    currentSize += 1;
+    applyFontSize();
   });
-});
 
+  document.getElementById('font-decrease').addEventListener('click', () => {
+    currentSize = Math.max(10, currentSize - 1);
+    applyFontSize();
+  });
+
+  applyFontSize();
