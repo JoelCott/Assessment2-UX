@@ -60,32 +60,33 @@ body {
    .title {
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   .welcome {
     font-family: 'Urbanist', sans-serif;
-    font-size: 33px;
+    font-size: 15px;
     font-weight: 400;
     color: black;
   }
   
   .app-name {
     font-family: 'Urbanist', sans-serif;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: 700;
     color: black;
 }   
   
   
   #login-container {
-    margin-top: 50px;
+    margin-top: px;
   }
 
 
 
   .button {
     width: 250px;
+    height: 5px;
     padding: 15px;
     /* margin: 10px; */
     margin-left: auto;
@@ -121,7 +122,7 @@ body {
   #noAccount{
     font-family: 'Urbanist', sans-serif;
     font-size: 15px;
-    margin-top: 70px;
+    margin-top: 20px;
     color: black;
     text-align: center;
     margin-left: auto;
@@ -137,7 +138,8 @@ body {
 
 
   #logbutton{
-    margin-top: 90px;
+    margin-top: 50px;
+    
   }
   
   
