@@ -47,6 +47,15 @@ body {
     font-size: 18px;
   }
   
+  .backButton{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
    .title {
     text-align: center;
     margin-top: 40px;
@@ -108,8 +117,26 @@ body {
     text-align: left;
   }
 
+  #noAccount{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    margin-top: 70px;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
+  }
+
+  #blue{
+    color: blue;
+  }
+
+
   #logbutton{
-    margin-top: 150px;
+    margin-top: 90px;
   }
   
   
