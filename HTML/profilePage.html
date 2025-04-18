@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <link href="/css/template.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="phone">
-        <div class="status-bar">
-            <div id="time"><b>9:41</b></div>
-            <div class="icons">
-                <i class="fas fa-signal"></i>
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-battery-full"></i>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/CSS/profilePage.css">
+    </head>
+    <body>
+        <div class="phone">
+            <div class="status-bar">
+                <div id="time"><b>9:41</b></div>
+                <div class="icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+                </div>
             </div>
+
+            <a href="/HTML/homePageJoel.html" class="backButton"> < </a>
+        
+            <div class="title">
+                <div class="welcome">ParkingPro</div>
+                <div class="app-name">My Profile</div>
+            </div>      
+            
+            <div id="info">
+                <p class="head"> Name:</p>
+                <button class="edit-button">&#10000; Edit</button>
+                <p class="position">Ole Chapman</p>
+                <p class="head"> Email:</p>
+                <button class="edit-button">&#10000; Edit</button>
+                <p class="position"> oldperson@yahoo.com></p>
+                <p class="head"> Password:</p>
+                <button class="edit-button">&#10000; Edit</button>
+                <p class="position"> ********</p>
+                <p class="head"> Number:</p>.
+                <button class="edit-button">&#10000; Edit</button>
+                <p class="position"> 12345678901</p>
+            </div>
+
+            <div class="button-container">
+                <button a href="#"  id="wallet"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMiF4LM5Ga0LiVnrh00vpCOy8hspYcPhWkDA&s" class="picture" alt="">  <span>Methods</span></button>
+                <button a href="#"  id="bell"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8BAQHq6ur7+/sTExMEBATn5+f5+fmqqqrZ2dnU1NT29vbf399VVVWenp6VlZVlZWWysrJcXFyHh4cfHx9tbW0PDw8YGBhQUFC4uLjExMSQkJAtLS19fX1gYGDPz887OztHR0cyMjK/v783NzdycnJur9ZOAAAEy0lEQVR4nO2ci1LqMBCGG2IodwQKiKjA4fj+r3hawCPXlnb/XbrMfjPO6CiT/dw0tyaJ2o3nph01ouemYYbqMUP9mKF+zFA/ZqgfM9SPGerHDPVjhvoxQ/2YoX7MUD9mqB8z1I8Z6scM9WOG+jFD/ZihfsxQP2aoHzPUjxnqxwz1Y4b6MUP9mKF+zFA/ZgjFe3/4Rq5M6RzGq8Gw1ZEUlDWMJ25HMpIrU9DQR83E/TD2YnkUM/RRY+7CQTC4V7FnUdDwy4XwIxhcS6ZYScOOOyGJZcoVfA4nJ4LBrYTKlTNcnxkOhMoVMNxVx25vdlpL3bS3+wV7gyOSw2ZrfO6XMe+3mvyFCxgu3nbVMpzY/fzUX3AXz20YD65l75jZwLPWVWbD0ctxwq6R/u5lwanIatgc59v9p88YBJ+hj97vkTvwzpZGxhwOCurnaVVl6x65DP1+DHOvYfp3y4hnvsFk6KNhiSq6Z8hTT7ly2Crrl6ZxxKLIZNgpVrpCmyMUHkP/UcnwQ08Ol+eDtDuZMMTCYtirlMEMhpE4i+G0suEU39hwGPbu7gdPyT7Ug0fDYfhZOYXOfcKjYTDsEgSdq38t9VlnX6mSZjCsMjLk8I2Uwzd0OHjDJsUvTT46Hrxh6RHpiSF+dIo3/KIYpryC48G3NEmxRC4JeJoIN+xVb0gPgDt9uOGCbAheQYUbLsmGS2xAYMPdW0KiIbipgeew2tz3mD/YgOCGZEEXsAHV0NBhA0Ib0iYWe7rQiNCGDYAhOCKwIWncfQC7WIM2rL4IZYZVsVpaFoRhvVsaRFta797i+ftDDzCs+QwYYIgNyAxLY4bqDREtDTQguGEMMKx3W/r8syfEyBu7YIo2XAEMsTvA0YYjgCF2SRhtOCkWKCCAl4TRhmNADsfQnZhoQ7pfyDrE+hpW2892TgcZEthwCTFc1jiH9LcWGdA3F0hDH23JL572vMNiQufwL8TPuTUwJqjhgLBX6BjosS+k4WofHcIQ2JwCDdsAt19gw2+cYefi9BaJgMoizHAEFoQNwCGGPvKUPaW3+Owihm+YHPbWxfGWJrg14mGEGFJ2lObTomcRYBhX37hezNRTFemG3Y0rOiZambTt2lDf09ANN1x6B6ibhsmG5c+olSLN4vCxhoj3hfmKLtDqKdUQNV/KU6TNpaiGpF3dd0I7oGCGRbDX0vDoWtrlfwwf3NJwV9OQVVLSqIZqWOXQdjmI3SHAMGp/Jy95FORonvPReTIlT4TphlkV8jkULIPP8z58+B8+1LCYgp1uH8zFCxhG+ZNH9DGnCwQMN7mG1IakEAHD241tZg59z3QNAcPcs17g4yNXkLjrq5+TRP5b2yQMV7eWUtPOkP9+SJEb6T5vLhZvuQsXupHOJzceRfz9ApfI3JvYnO1u9DytojPXl7jDVOhmyOz62Ys0jslrofcgdfdl93KjDfis6C3kbvccZbsYwq7Jyb76LFcmXUHwlt14+9sxfnciqVu9Ze/zjjuLwbC1zV4pPd9d0A/DDPVjhvoxQ/2YoX7MUD9mqB8z1I8Z6scM9WOG+jFD/ZihfsxQP2aoHzPUjxnqxwz1Y4b6MUP9mKF+zFA/ZqgfM9SPGerHDPVjhvoxQ/2YoX7MUD+NqN14btr/AIp2MeM6umHbAAAAAElFTkSuQmCC" class="picture" alt="Bell Icon">  <span> Settings </span> </button>
+              
+              
+        
+            <div class="home-indicator"></div>
         </div>
 
-        <div class="logo-small">ParkingPro</div>
 
-        <div class="title-row">
-            <h1>Accessibility</h1>
-            <i class="fa-solid fa-person accessibility-icon"></i>
-        </div>
 
-        <div class="bottom-nav">
-            <a class="nav-btn" href="#">
-                <i class="fas fa-user"></i>
-                <span><strong>Profile</strong></span>
-            </a>
-            <a class="nav-btn" href="homePageJoel.html">
-                <i class="fas fa-home"></i>
-                <span><strong>Home</strong></span>
-            </a>
-            <a class="nav-btn" href="accessIhsan.html">
-                <i class="fas fa-cog"></i>
-                <span><strong>Settings</strong></span>
-            </a>
-        </div>
-    </div>
-    
-</body>
-
+        <script src="" async defer></script>
+    </body>
 </html>

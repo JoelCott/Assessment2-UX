@@ -1,15 +1,19 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+    background-color: white;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+  }
 
-.phone {
+  a.button {
+    text-decoration: none;
+    color: inherit;
+  }  
+  
+  .phone {
     width: 350px;
     height: 700px;
     background-color: #d3d3d3;
@@ -21,91 +25,146 @@ body {
     position: relative;
     overflow: hidden;
     padding-top: 10px;
-}
-
-.phone::before {
-    content: "";
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-}
-
-.status-bar {
+  }
+  
+  .status-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 0;
     font-size: 14px;
+    font-family: sans-serif;
     box-sizing: border-box;
-}
-
-#time {
-    font-size: 18px;
-}
-
-.icons {
+  }
+  
+  .icons {
     display: flex;
     gap: 10px;
     font-size: 16px;
-}
-
-.logo-small {
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 12px;
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 50px;
-}
-
-.title-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.accessibility-icon {
-    font-size: 28px;
-}
-
-.bottom-nav {
+  }
+  
+  #time {
+    font-size: 18px;
+  }
+  
+  .backButton{
     position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #d3d3d3;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.nav-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
+    left: 30px;
+    top: 50px;
+    font-size: 30px;
     font-weight: bold;
+    text-decoration: none;
+  }
+
+   .title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .welcome {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .app-name {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+}   
+
+#info{
+    margin-left: 0px;
+}
+  
+.head{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+}  
+
+.position{
+    margin-top: -5px;
 }
 
-.nav-btn i {
-    font-size: 20px;
-    color: #00abbe;
+.edit-button{
+    background-color: rgba(0, 255, 255, 0.8);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    /* margin-top: 0px; */
+    text-decoration: none;
+  }
+
+.head, .edit-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 70px; /* Adds space between the two */
 }
 
-.nav-btn span {
-    margin-top: 4px;
+
+#wallet{
+
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+    background-color: #00e0e0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+
 }
+
+#wallet img {
+    width: 30px; /* Adjust the size of the icon */
+    height: 30px; /* Adjust the size of the icon */
+}
+
+#bell{
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between icon and text */
+    background-color: #00e0e0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bell img {
+    width: 30px; /* Adjust the size of the icon */
+    height: 30px; /* Adjust the size of the icon */
+}
+
+
+#wallet, #bell {
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+  .home-indicator {
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+   
