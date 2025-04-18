@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <link href="/css/template.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="phone">
-        <div class="status-bar">
-            <div id="time"><b>9:41</b></div>
-            <div class="icons">
-                <i class="fas fa-signal"></i>
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-battery-full"></i>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/CSS/scheduleParking.css">
+    </head>
+    <body>
+        <div class="phone">
+            <div class="status-bar">
+                <div id="time"><b>9:41</b></div>
+                <div class="icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+                </div>
             </div>
+
+            <a href="/HTML/homePageJoel.html" class="backButton"> < </a>
+        
+            <div class="title">
+                <div class="welcome">ParkingPro</div>
+                <div class="app-name">Schedule Parking</div>
+            </div>
+            
+            <img src="https://www.ilovemaps.co.uk/cdn/shop/files/Leedsstreetmap160x1601.jpg?v=1712141520" alt="car parks" id="map">
+            <p id="duration">Parking Duration:</p>
+            
+            <div id="times">
+                <div>
+                  <input type="radio" id="hour1" name="time">
+                  <label for="hour1">1 Hour</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="hour2" name="time">
+                  <label for="hour2">2 Hour's</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="hour4" name="time">
+                  <label for="hour4">4 Hour's</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="custom" name="time">
+                  <label for="custom">Custom</label>
+                </div>
+            </div>
+
+            <!-- <div id="info">
+                <form action="">
+                    <label for="date" class="booking" >Date of Booking: <br> </label>
+                    <input type="date" id="date" class="button" name="date" required> <br><br>  
+                    
+                    <label for="time" class="booking" >Time of Booking: <br> </label>
+                    <input type="time" id="time" class="button" name="time" required>
+                </form>
+            </div>
+                 -->
+
+                <div class="booking-section">
+                    <label for="date">Date of Booking:</label>
+                    <input type="date" id="date" class="input-box" />
+                  
+                    <label for="time">Time of Booking:</label>
+                    <input type="time" id="time" class="input-box" />
+                </div>
+                  
+                <button a href="#" class="button" id="bookButton"> Confirm </button> 
+                <!-- add the href for the payment screen once completed -->
+
+
+            <div class="home-indicator"></div>
         </div>
 
-        <div class="logo-small">ParkingPro</div>
 
-        <div class="title-row">
-            <h1>Accessibility</h1>
-            <i class="fa-solid fa-person accessibility-icon"></i>
-        </div>
 
-        <div class="bottom-nav">
-            <a class="nav-btn" href="#">
-                <i class="fas fa-user"></i>
-                <span><strong>Profile</strong></span>
-            </a>
-            <a class="nav-btn" href="homePageJoel.html">
-                <i class="fas fa-home"></i>
-                <span><strong>Home</strong></span>
-            </a>
-            <a class="nav-btn" href="accessIhsan.html">
-                <i class="fas fa-cog"></i>
-                <span><strong>Settings</strong></span>
-            </a>
-        </div>
-    </div>
-    
-</body>
-
+        <script src="" async defer></script>
+    </body>
 </html>
