@@ -12,7 +12,12 @@ body {
   a.button {
     text-decoration: none;
     color: inherit;
-  }  
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
 
   .phone {
     width: 350px;

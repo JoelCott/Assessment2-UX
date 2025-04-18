@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="/css/startParking.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="phone">
+      <div class="status-bar">
+        <div id="time"><b>9:41</b></div>
+        <div class="icons">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+  
+      <div class="logo-small">ParkingPro</div>
+  
+      <div class="title-section">
+        <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+        <div class="page-title">Start Parking</div>
+        <div class="progress-bar">
+          <div class="progress-step active"></div>
+          <div class="progress-step"></div>
+          <div class="progress-step"></div>
+        </div>
+        <p class="step-label">Step 1 of 3</p>
+      </div>
+  
+      <div class="content">
+        <h3>Select Car Park Location:</h3>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.808014708497!2d-1.5465328230564912!3d53.79607427251088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795c1f87e72d87%3A0x4040a0176b9df8c5!2sTrinity%20Leeds%20Car%20Park!5e0!3m2!1sen!2suk!4v1713446142479!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+  
+        <h3>Select Parking Duration:</h3>
+        <div class="radio-group grid-layout">
+            <label><input type="radio" name="duration"> Custom</label>
+            <label><input type="radio" name="duration"> 1 hour</label>
+            <label><input type="radio" name="duration"> 30 mins</label>
+            <label><input type="radio" name="duration"> 2 hours</label>
+        </div>          
+        
+        <div id="custom-popup" class="popup-overlay">
+            <div class="popup-content">
+              <h3>Enter custom hour stay:</h3>
+              <input type="number" id="custom-hours" min="1" placeholder="e.g. 3">
+              <button id="confirm-custom">Confirm</button>
+            </div>
+          </div>
+          
+  
+        <a href="startParkingStep2.html" class="confirm-btn">Confirm & Proceed</a>
+      </div>
+  
+      <div class="bottom-nav">
+        <a class="nav-btn" href="#">
+          <i class="fas fa-user"></i>
+          <span><strong>Profile</strong></span>
+        </a>
+        <a class="nav-btn" href="homePageJoel.html">
+          <i class="fas fa-home"></i>
+          <span><strong>Home</strong></span>
+        </a>
+        <a class="nav-btn" href="accessIhsan.html">
+          <i class="fas fa-cog"></i>
+          <span><strong>Settings</strong></span>
+        </a>
+      </div>
+    </div>
+    <script src="/js/startParking.js"></script>
+  </body>
+  </html>
