@@ -2,12 +2,14 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/CSS/signUp.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <link href="/css/signUp.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="phone">
@@ -20,7 +22,7 @@
                 </div>
             </div>
 
-            <a href="/HTML/landingPage.html" class="backButton"> < </a>
+            <a href="/html/landingPage.html" class="backButton"> < </a>
         
             <div class="title">
                 <div class="welcome">ParkingPro</div>
@@ -30,30 +32,32 @@
             <div id="login-container">
                 <form>
                     <p class="login-text">Full Name:</p>
-                    <input type="text" class="button"  placeholder="Enter Your Full Name Here" name="username" required>
-                    <p class="login-text"> Date Of Birth: (DD/MM/YYYY) </p>
-                    <input type="password" class="button" placeholder="Enter Date Of Birth Here" name="password" required>
+                    <input type="text" class="button" placeholder="Enter Your Full Name Here" name="username" required>
+                
+                    <p class="login-text">Date Of Birth: (DD/MM/YYYY)</p>
+                    <input type="date" class="button" name="dob" required>
+                
                     <p class="login-text">Email Address:</p>
-                    <input type="text" class="button"  placeholder="Enter Email Here" name="username" required>
+                    <input type="email" class="button" placeholder="Enter Email Here" name="email" required>
+                
                     <p class="login-text">Phone Number:</p>
-                    <input type="password" class="button" placeholder="Enter Phone Number Here" name="password" required>
+                    <input type="tel" class="button" placeholder="Enter Phone Number Here" name="phone" required>
+                
                     <p class="login-text">Password:</p>
-                    <input type="text" class="button"  placeholder="Enter Password Here" name="username" required>
+                    <input type="password" class="button" placeholder="Enter Password Here" name="password" required>
                 </form>
+                
+                <a href="/HTML/loginPage.html" class="button" id="logbutton">Sign Up</a>
+                
+                <p id="noAccount">
+                    Already have an account? <br>
+                    <a id="blue" href="/HTML/loginPage.html">Click Here</a>
+                  </p>                  
 
-                <p id="noAccount"> Already have an account? <br> <span id="blue"> Click Here </span> </p>
-
-                <a href="/HTML/loginPage.html" class="button" id="logbutton" >Sign Up</a>
-
-
-              
-              
         
             <div class="home-indicator"></div>
         </div>
 
 
-
-        <script src="" async defer></script>
     </body>
 </html>
