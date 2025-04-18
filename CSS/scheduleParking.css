@@ -1,15 +1,19 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+    background-color: white;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+  }
 
-.phone {
+  a.button {
+    text-decoration: none;
+    color: inherit;
+  }  
+  
+  .phone {
     width: 350px;
     height: 700px;
     background-color: #d3d3d3;
@@ -21,91 +25,165 @@ body {
     position: relative;
     overflow: hidden;
     padding-top: 10px;
-}
-
-.phone::before {
-    content: "";
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-}
-
-.status-bar {
+  }
+  
+  .status-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 0;
     font-size: 14px;
+    font-family: sans-serif;
     box-sizing: border-box;
-}
-
-#time {
-    font-size: 18px;
-}
-
-.icons {
+  }
+  
+  .icons {
     display: flex;
     gap: 10px;
     font-size: 16px;
-}
-
-.logo-small {
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 12px;
-}
-
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 50px;
-}
-
-.title-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.accessibility-icon {
-    font-size: 28px;
-}
-
-.bottom-nav {
+  }
+  
+  #time {
+    font-size: 18px;
+  }
+  
+  .backButton{
     position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #d3d3d3;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    left: 30px;
+    top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+   .title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .welcome {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .app-name {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+}   
+
+
+#map{
+    width: 70%;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: -20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.nav-btn {
+
+
+
+
+
+
+
+
+#times {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* spacing between grid items */
+    max-width: 300px;
+    /* margin: 20px auto; */
+  }
+  
+  #times div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .head{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+}  
+
+#info{
+    margin-top: 15px;
+    
+}
+
+
+
+ .button {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background: cyan;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px green;
+    font-family: sans-serif;
+    transition: background 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+
+/*  .booking{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  } */
+
+  .booking-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
+  }
+  
+  .booking-section label {
+    margin-top: 15px;
+    margin-bottom: 4px;
     font-weight: bold;
-}
+  }
+  
+  .input-box {
+    margin-bottom: 10px; /* Reduce this value to bring them closer */
+    padding: 10px 20px;
+    background-color: cyan;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #888;
+    text-align: center;
+  }
+  
 
-.nav-btn i {
-    font-size: 20px;
-    color: #00abbe;
-}
 
-.nav-btn span {
-    margin-top: 4px;
-}
+  .home-indicator {
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+   
