@@ -1,154 +1,176 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
-    margin: 0;
-    font-family: 'Urbanist', sans-serif;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+}
 
-  a.button {
-    text-decoration: none;
-    color: inherit;
-  }  
-  
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 10px;
-  }
-  
-  .status-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 0;
-    font-size: 14px;
-    font-family: sans-serif;
-    box-sizing: border-box;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 10px;
-    font-size: 16px;
-  }
-  
-  #time {
-    font-size: 18px;
-  }
-  
-  .backButton{
-    position: absolute;
-    left: 30px;
-    top: 50px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-  }
+a.button {
+  text-decoration: none;
+  color: inherit;
+}
 
-   .title {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-  
-  .welcome {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 33px;
-    font-weight: 400;
-    color: black;
-  }
-  
-  .app-name {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: black;
-}   
-  
-  
-  #login-container {
-    margin-top: 50px;
-  }
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+}
 
+.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+#time {
+  font-size: 18px;
+}
+
+.backButton {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.welcome {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+}
 
 
-  .button {
-    width: 250px;
-    padding: 15px;
-    /* margin: 10px; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background: cyan;
-    border-radius: 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px green;
-    font-family: sans-serif;
-    transition: background 0.3s ease;
-    display: block;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .button:hover {
-    background: rgba(0, 255, 255, 0.8);
-  } 
+.app-name {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  color: black;
+}
 
-  .login-text{
-    font-family: 'Urbanist', sans-serif;
-    /* font-size: 20px; */
-    margin-bottom: -20px;
-    font-weight: 400;
-    color: black;
-    text-align: left;
-  }
+#login-container {
+  margin-top: 30px;
+}
 
-  #noAccount{
-    font-family: 'Urbanist', sans-serif;
-    font-size: 15px;
-    margin-top: 70px;
-    color: black;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.button {
+  width: 250px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: cyan;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: background 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: none;
+}
 
-    
+.button:hover {
+  background: rgba(0, 255, 255, 0.8);
+}
 
-  }
+.login-text {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: -20px;
+  color: black;
+  text-align: left;
+}
 
-  #blue{
-    color: blue;
-  }
+#logbutton {
+  background-color: #28a745;
+  width: 150px;
+  color: white;
+  margin-top: 40px;
+  padding: 12px 0;
+  line-height: 1;
+  height: auto;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: none;
+}
 
+#logbutton:hover {
+  background-color: #218838;
+}
 
-  #logbutton{
-    margin-top: 90px;
-  }
-  
-  
-  .home-indicator {
-    width: 100px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-   
+#noAccount {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 17px;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#blue {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-indicator {
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

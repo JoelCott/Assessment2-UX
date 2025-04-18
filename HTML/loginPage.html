@@ -2,12 +2,14 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/CSS/loginPage.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <link href="/css/loginPage.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="phone">
@@ -22,20 +24,26 @@
 
             <a href="/HTML/landingPage.html" class="backButton"> < </a>
         
-            <div class="title">
+            <div class="top-bar">
                 <div class="welcome">ParkingPro</div>
+            </div>
+            
+            <div class="title">
                 <div class="app-name">Log In</div>
-            </div>      
+            </div>
             
             <div id="login-container">
                 <form>
-                    <p class="login-text">Email Address/Phone Number</p>
+                    <p class="login-text">Email Address/Phone Number:</p>
                     <input type="text" class="button"  placeholder="Please enter your Details" name="username" required>
-                    <p class="login-text">Password</p>
-                    <input type="password" class="button" placeholder="Password" name="password" required>
+                    <p class="login-text">Password:</p>
+                    <input type="password" class="button" placeholder="Enter Password" name="password" required>
                 </form>
 
-                <p id="noAccount"> Don't have an account? <br> <span id="blue"> Click Here </span> </p>
+                <p id="noAccount">
+                    Don't have an account? <br>
+                    <a id="blue" href="/HTML/signUp.html">Click Here</a>
+                </p>
 
                 <a href="/HTML/homePageJoel.html" class="button" id="logbutton" >Log In</a>
 

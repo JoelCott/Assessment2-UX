@@ -101,7 +101,7 @@ a.button {
   display: block;
   text-decoration: none;
   color: black;
-  box-shadow: none; /* Removed green underglow */
+  box-shadow: none;
 }
 
 .button:hover {
@@ -110,7 +110,7 @@ a.button {
 
 .login-text {
   font-family: 'Urbanist', sans-serif;
-  font-size: 18px; /* Slightly larger now */
+  font-size: 18px;
   margin-bottom: -20px;
   font-weight: bold;
   color: black;
@@ -121,7 +121,7 @@ a.button {
   background-color: #28a745;
   width: 150px;
   color: white;
-  margin-top: 30px; /* Was 50px — moved up */
+  margin-top: 30px;
   padding: 12px 0;
   line-height: 1;
   height: auto;
@@ -141,7 +141,7 @@ a.button {
 #noAccount {
   font-family: 'Urbanist', sans-serif;
   font-size: 17px;
-  margin-top: 15px; /* Was 20px — moved up */
+  margin-top: 15px;
   color: black;
   text-align: center;
   margin-left: auto;
