@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="/css/step2.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="phone">
+    <div class="status-bar">
+      <div id="time"><b>9:41</b></div>
+      <div class="icons">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <div class="logo-small">ParkingPro</div>
+
+    <div class="title-section">
+      <a href="/html/startParking.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+      <div class="page-title">Payment <i class="fas fa-credit-card"></i></div>
+      <div class="progress-bar">
+        <div class="progress-step active"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+      </div>
+      <p class="step-label">Step 2 of 3</p>
+    </div>
+
+    <div class="content">
+      <h3>Parking Session Details:</h3>
+      <p><i class="fas fa-map-marker-alt"></i> <b>Location:</b> <span class="highlight-value">Victoria Leeds Car Park</span></p>
+      <p><i class="fas fa-clock"></i> <b>Duration:</b> <span class="highlight-value">1.2 hours</span></p>
+      <p><i class="fas fa-pound-sign"></i> <b>Cost:</b> <span class="highlight-value">£7.50</span></p>
+
+
+      <h3>Select Payment Method:</h3>
+      <div class="payment-grid">
+        <!-- Apple Pay -->
+        <label class="switch-label">
+          <span class="logo-text">
+            <img src="/images/apple-pay.png" alt="Apple Pay">
+          </span>
+          <input type="checkbox" class="payment-toggle" name="payment" value="apple">
+          <span class="slider"></span>
+        </label>
+      
+        <!-- Google Pay -->
+        <label class="switch-label">
+          <span class="logo-text">
+            <img src="/images/googlepay.png" alt="Google Pay">
+          </span>
+          <input type="checkbox" class="payment-toggle" name="payment" value="google">
+          <span class="slider"></span>
+        </label>
+      
+        <!-- PayPal -->
+        <label class="switch-label">
+          <span class="logo-text">
+            <img src="/images/paypal.png" alt="PayPal">
+          </span>
+          <input type="checkbox" class="payment-toggle" name="payment" value="paypal">
+          <span class="slider"></span>
+        </label>
+      
+        <!-- Amex -->
+        <label class="switch-label">
+          <span class="logo-text">
+            <img src="/images/amex.png" alt="Amex">
+          </span>
+          <input type="checkbox" class="payment-toggle" name="payment" value="amex">
+          <span class="slider"></span>
+        </label>
+      
+        <!-- Visa -->
+        <label class="switch-label">
+          <span class="logo-text">
+            <img src="/images/visa.png" alt="Visa">
+          </span>
+          <input type="checkbox" class="payment-toggle" name="payment" value="visa">
+          <span class="slider"></span>
+        </label>
+      
+        <!-- Confirm Button fits neatly in grid -->
+        <a href="step3.html" class="confirm-btn">Confirm & Pay</a>
+      </div>
+      
+
+    <div class="bottom-nav">
+      <a class="nav-btn" href="#"><i class="fas fa-user"></i><span><strong>Profile</strong></span></a>
+      <a class="nav-btn" href="homePageJoel.html"><i class="fas fa-home"></i><span><strong>Home</strong></span></a>
+      <a class="nav-btn" href="accessIhsan.html"><i class="fas fa-cog"></i><span><strong>Settings</strong></span></a>
+    </div>
+  </div>
+
+  <script src="/js/step2.js"></script>
+</body>
+
+</html>

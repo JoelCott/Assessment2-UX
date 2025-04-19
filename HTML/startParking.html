@@ -26,7 +26,7 @@
       <div class="logo-small">ParkingPro</div>
   
       <div class="title-section">
-        <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+        <a href="/html/homePageJoel.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
         <div class="page-title">Start Parking</div>
         <div class="progress-bar">
           <div class="progress-step active"></div>
@@ -50,9 +50,10 @@
         <h3>Select Parking Duration:</h3>
         <div class="radio-group grid-layout">
             <label><input type="radio" name="duration"> Custom</label>
-            <label><input type="radio" name="duration"> 1 hour</label>
-            <label><input type="radio" name="duration"> 30 mins</label>
-            <label><input type="radio" name="duration"> 2 hours</label>
+            <label><input type="radio" name="duration" value="1 Hour" data-mins="60"> 1 Hour</label>
+            <label><input type="radio" name="duration" value="30 Mins" data-mins="30"> 30 mins</label>
+            <label><input type="radio" name="duration" value="2 Hours" data-mins="120"> 2 Hours</label>
+
         </div>          
         
         <div id="custom-popup" class="popup-overlay">
@@ -64,7 +65,7 @@
           </div>
           
   
-        <a href="startParkingStep2.html" class="confirm-btn">Confirm & Proceed</a>
+        <a href="step2.html" class="confirm-btn">Confirm & Proceed</a>
       </div>
   
       <div class="bottom-nav">
