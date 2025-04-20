@@ -161,7 +161,10 @@ body {
     text-align: center;
     width: 80%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-top: 40px;
   }
+  
   
   .popup-content h3 {
     font-size: 18px;
@@ -184,8 +187,23 @@ body {
     border: none;
     border-radius: 12px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
   }  
+
+  .popup-back-link {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00abbe;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  
 
   .confirm-btn {
     background-color: #4CAF50;

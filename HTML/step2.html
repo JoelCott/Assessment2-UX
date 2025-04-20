@@ -90,9 +90,20 @@
           <span class="slider"></span>
         </label>
       
-        <!-- Confirm Button fits neatly in grid -->
-        <a href="step3.html" class="confirm-btn">Confirm & Pay</a>
+        <button id="confirm-pay-btn" class="confirm-btn">Confirm & Pay</button>
       </div>
+    
+      <div id="visa-popup" class="popup-overlay">
+        <div class="popup-content">
+          <a id="popup-back-btn" class="popup-back-link"><i class="fas fa-chevron-left"></i> Back</a>
+          <h3>Enter Card Details</h3>
+          <input type="text" placeholder="Card Number" id="card-number" maxlength="19">
+          <input type="text" placeholder="MM/YY" id="expiry" maxlength="5">
+          <input type="text" placeholder="CVC" id="cvc" maxlength="3">
+          <button id="submit-card">Submit</button>
+        </div>
+      </div>
+      
       
 
     <div class="bottom-nav">
