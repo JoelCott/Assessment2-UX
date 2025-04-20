@@ -48,13 +48,46 @@ body {
     font-size: 18px;
   }
   
-  .backButton{
-    position: absolute;
-    left: 30px;
-    top: 50px;
-    font-size: 30px;
-    font-weight: bold;
+  .back-btn {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  
+  .bottom-nav {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #d3d3d3;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-btn i {
+    font-size: 20px;
+    color: #00abbe;
+  }
+  
+  .nav-btn span {
+    margin-top: 4px;
   }
 
    .title {
@@ -82,14 +115,41 @@ body {
 #info{
     margin-left: 0px;
 }
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 5px 0;
+}
   
 .head{
     font-family: 'Urbanist', sans-serif;
     font-size: 15px;
 }  
 
+.logo-small {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .position{
-    margin-top: -5px;
+    margin-top: -20px;
 }
 
 .edit-button{
