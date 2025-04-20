@@ -113,6 +113,8 @@ body {
 #wallet{
 
     display: flex;
+    text-decoration: none;
+    color: black;
     align-items: center;
     gap: 8px; /* space between icon and text */
     background-color: #00e0e0;
@@ -132,6 +134,8 @@ body {
 
 #bell{
     display: flex;
+    text-decoration: none;
+    color: black;
     align-items: center;
     gap: 8px; /* space between icon and text */
     background-color: #00e0e0;
