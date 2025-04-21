@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   yesBtn.addEventListener("click", () => {
-    alert("Parking session ended.");
+    alert("Parking session ended. Thank you for parking with us :)");
     window.location.href = "homePageJoel.html";
   });
 
