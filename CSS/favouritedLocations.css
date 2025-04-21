@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
     position: absolute;
     bottom: 10px;
-    left: 50%; /* Centered */
+    left: 50%;
     transform: translateX(-50%);
   }
 

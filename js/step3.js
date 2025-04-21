@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Elements
   const locationText = document.getElementById("location-text");
   const durationText = document.getElementById("duration-text");
   const costText = document.getElementById("cost-text");
@@ -12,19 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const extendCancelBtn = document.getElementById("extendCancelBtn");
   const extendInput = document.getElementById("extendInput");
 
-  const costPerBlock = 2.5; // £2.50 per 30 mins
+  const costPerBlock = 2.5;
   const startTimestamp = Date.now();
 
-  // Load from localStorage
   const location = localStorage.getItem("parkingLocation") || "Victoria Leeds Car Park";
   const initialMins = parseInt(localStorage.getItem("parkingDurationMins"), 10) || 72;
 
   locationText.textContent = location;
 
-  // Store endTimestamp globally
   let endTimestamp = startTimestamp + initialMins * 60 * 1000;
 
-  // Countdown function
   function updateCountdown() {
     const now = Date.now();
     const diff = endTimestamp - now;
@@ -44,11 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (costText) costText.textContent = `£${cost.toFixed(2)}`;
   }
 
-  // Start countdown
   setInterval(updateCountdown, 1000);
   updateCountdown();
 
-  // End session popup
   document.querySelector(".end-btn").addEventListener("click", () => {
     endPopup.style.display = "flex";
   });
@@ -62,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     endPopup.style.display = "none";
   });
 
-  // Extend popup
   extendBtn.addEventListener("click", () => {
     extendPopup.style.display = "flex";
   });
@@ -86,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     endTimestamp += additionalMinutes * 60 * 1000;
-    alert(`Parking session successfully extended by ${additionalMinutes} minutes.`);
+    alert(`✅ Parking session successfully extended by ${additionalMinutes} minutes.`);
     extendPopup.style.display = "none";
     extendInput.value = "";
   });

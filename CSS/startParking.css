@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
     position: absolute;
     bottom: 10px;
-    left: 50%; /* Centered */
+    left: 50%;
     transform: translateX(-50%);
   }
 
@@ -154,6 +154,8 @@ body {
     text-align: center;
     width: 80%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-top: 40px;
   }
   
   .popup-content h3 {
@@ -179,6 +181,18 @@ body {
     font-size: 16px;
     cursor: pointer;
   }  
+
+  .popup-back-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #00abbe;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  
 
   .confirm-btn {
     background-color: #4CAF50;

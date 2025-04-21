@@ -51,12 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
   toggles.forEach(toggle => {
     toggle.addEventListener('change', (e) => {
       if (toggle === visaToggle && toggle.checked) {
-        // Don't allow toggle just yet
         e.preventDefault();
         toggle.checked = false;
         popup.style.display = 'flex';
       } else if (toggle.checked) {
-        // Uncheck all others
         toggles.forEach(other => {
           if (other !== toggle) {
             other.checked = false;
@@ -71,20 +69,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const expiry = document.getElementById('expiry').value.trim();
     const cvc = document.getElementById('cvc').value.trim();
   
-    // Validate expiry: MM/YY format
     const expiryPattern = /^(0[1-9]|1[0-2])\/\d{2}$/;
     if (!expiryPattern.test(expiry)) {
       alert("Please enter a valid expiry date in MM/YY format.");
       return;
     }
   
-    // Validate CVC: exactly 3 digits
     if (!/^\d{3}$/.test(cvc)) {
       alert("Please enter a valid 3-digit CVC.");
       return;
     }
   
-    // Optional: you could validate card number here too
   
     popup.style.display = 'none';
     visaToggle.checked = true;
@@ -101,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const expiryInput = document.getElementById('expiry');
 
 expiryInput.addEventListener('input', function (e) {
-  let value = this.value.replace(/\D/g, ''); // Remove non-digits
+  let value = this.value.replace(/\D/g, '');
   if (value.length >= 2 && !this.value.includes('/')) {
     this.value = value.slice(0, 2) + '/' + value.slice(2, 4);
   } else {
@@ -115,7 +110,7 @@ const backBtn = document.getElementById('popup-back-btn');
 
 backBtn.addEventListener('click', () => {
   popup.style.display = 'none';
-  visaToggle.checked = false; // Uncheck Visa if they went back
+  visaToggle.checked = false;
 });
 
 document.addEventListener("DOMContentLoaded", function () {

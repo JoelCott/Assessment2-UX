@@ -2,77 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <link href="/css/favouritedLocations.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking History</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/viewHistory.css" />
 </head>
 
 <body>
     <div class="phone">
-        <div class="status-bar">
-            <div id="time"><b>9:41</b></div>
-            <div class="icons">
-                <i class="fas fa-signal"></i>
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-battery-full"></i>
-            </div>
+      <div class="status-bar">
+        <div id="time"><b>9:41</b></div>
+        <div class="icons">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
         </div>
-
-        <div class="logo-small">ParkingPro</div>
-
-        <div class="title-section">
-            <a href="/html/homePageJoel.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
-            <div class="page-title">Previous Bookings</div>
+      </div>
+  
+      <div class="logo-small">SwiftPark</div>
+  
+      <div class="title-section">
+        <a href="/html/homePageJoel.html" class="back-btn"><i class="fas fa-chevron-left"></i> Back</a>
+        <div class="page-title">Parking History</div>
+      </div>
+  
+      <div class="content">
+        <h2 class="section-title">Past Parking Sessions:</h2>
+  
+        <div class="session-header">
+          <i class="fas fa-calendar-alt"></i>
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-coins"></i>
         </div>
-
-        <div class="content">
-            <h3>Leeds:</h3>
-            <ul class="list">
-                <li><h4>Trinity Leeds Car Park</h4></li>
-                <li><h4>Victoria Gate Car Park</h4></li>
-                <li><h4>St John's Centre Car Park</h4></li>
-                <li><h4>Clarence Dock Car Park</h4></li>
-                <li><h4>Woodhouse Lane Car Park</h4></li>
-
-            </ul>
-            <h3>Manchester:</h3>
-            <ul class="list">
-                <li><h4>Manchester Arndale Car Park</h4></li>
-                <li><h4>Deansgate Car Park</h4></li>
-                <li><h4>Printworks Car Park</h4></li>
-                <li><h4>Piccadilly Gardens Car Park</h4></li>
-                <li><h4>Great Northern Car Park</h4></li>
-            </ul>
+  
+        <div class="session-row">
+          <div class="cell">28/07</div>
+          <div class="cell">
+            <span class="bold">Victoria Leeds</span><br>
+            <span class="light">Multi Storey Car Park</span>
+          </div>
+          <div class="cell bold">£5.00</div>
         </div>
-
-        <div class="confirm">
-            <a class="confirm-btn">Load More</a>
-
+  
+        <div class="session-row">
+          <div class="cell">16/08</div>
+          <div class="cell">
+            <span class="bold">West Street</span><br>
+            <span class="light">Car Park, Leeds</span>
+          </div>
+          <div class="cell bold">£10.00</div>
         </div>
-
-
-
-        <div class="bottom-nav">
-            <a class="nav-btn" href="/HTML/profilePage.html">
-                <i class="fas fa-user"></i>
-                <span><strong>Profile</strong></span>
-            </a>
-            <a class="nav-btn" href="homePageJoel.html">
-                <i class="fas fa-home"></i>
-                <span><strong>Home</strong></span>
-            </a>
-            <a class="nav-btn" href="accessIhsan.html">
-                <i class="fas fa-cog"></i>
-                <span><strong>Settings</strong></span>
-            </a>
+  
+  
+        <div class="session-row">
+          <div class="cell">14/12</div>
+          <div class="cell">
+            <span class="bold">Broadway</span><br>
+            <span class="light">Car Park, Bradford</span>
+          </div>
+          <div class="cell bold">£2.50</div>
         </div>
+  
+        <div class="session-row">
+          <div class="cell">14/04</div>
+          <div class="cell">
+            <span class="bold">Piccadilly Gardens</span><br>
+            <span class="light">Car Park, Manchester</span>
+          </div>
+          <div class="cell bold">£7.50</div>
+        </div>
+  
+        <div class="session-row">
+          <div class="cell">22/02</div>
+          <div class="cell">
+            <span class="bold">Arndale Centre</span><br>
+            <span class="light">Car Park, Manchester</span>
+          </div>
+          <div class="cell bold">£17.50</div>
+        </div>
+      </div>
+  
+      <div class="bottom-nav">
+        <a class="nav-btn" href="/HTML/profilePage.html">
+          <i class="fas fa-user"></i>
+          <span><strong>Profile</strong></span>
+        </a>
+        <a class="nav-btn" href="homePageJoel.html">
+          <i class="fas fa-home"></i>
+          <span><strong>Home</strong></span>
+        </a>
+        <a class="nav-btn" href="accessIhsan.html">
+          <i class="fas fa-cog"></i>
+          <span><strong>Settings</strong></span>
+        </a>
+      </div>
     </div>
-    
 </body>
 
 </html>

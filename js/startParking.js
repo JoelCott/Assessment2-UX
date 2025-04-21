@@ -21,10 +21,8 @@ confirmBtn.addEventListener('click', () => {
     const totalMinutes = Math.round(hours * 60);
     const label = `${hours} Hour${hours !== 1 ? 's' : ''}`;
 
-    // Save to localStorage
     saveParkingDuration(label, totalMinutes);
 
-    // Update label visually
     customLabel.textContent = label;
     const newRadio = document.createElement('input');
     newRadio.type = 'radio';
@@ -43,7 +41,12 @@ document.querySelectorAll('input[name="duration"]').forEach(radio => {
     const label = this.value;
     const mins = parseInt(this.dataset.mins);
 
-    // Save to localStorage
     saveParkingDuration(label, mins);
   });
 });
+
+document.getElementById("back-custom").addEventListener("click", function(e) {
+  e.preventDefault();
+  document.getElementById("custom-popup").style.display = "none";
+});
+

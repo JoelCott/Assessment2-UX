@@ -159,14 +159,13 @@ h1 {
     border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
-    /* margin-top: 0px; */
     text-decoration: none;
   }
 
 .head, .edit-button {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 70px; /* Adds space between the two */
+    margin-right: 70px;
 }
 
 
@@ -176,7 +175,7 @@ h1 {
     text-decoration: none;
     color: black;
     align-items: center;
-    gap: 8px; /* space between icon and text */
+    gap: 8px;
     background-color: #00e0e0;
     padding: 10px 20px;
     border: none;
@@ -188,8 +187,8 @@ h1 {
 }
 
 #wallet img {
-    width: 30px; /* Adjust the size of the icon */
-    height: 30px; /* Adjust the size of the icon */
+    width: 30px;
+    height: 30px;
 }
 
 #bell{
@@ -197,7 +196,7 @@ h1 {
     text-decoration: none;
     color: black;
     align-items: center;
-    gap: 8px; /* space between icon and text */
+    gap: 8px;
     background-color: #00e0e0;
     padding: 10px 20px;
     border: none;
@@ -208,8 +207,8 @@ h1 {
 }
 
 #bell img {
-    width: 30px; /* Adjust the size of the icon */
-    height: 30px; /* Adjust the size of the icon */
+    width: 30px;
+    height: 30px;
 }
 
 

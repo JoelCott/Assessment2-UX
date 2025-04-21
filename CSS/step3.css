@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
     position: absolute;
     bottom: 10px;
-    left: 50%; /* Centered */
+    left: 50%;
     transform: translateX(-50%);
   }
 
@@ -134,7 +134,7 @@ body {
   }
 
   .styled-input {
-    width: 100%;
+    width: 60%;
     padding: 12px 15px;
     font-size: 16px;
     border: 2px solid #ccc;
@@ -202,7 +202,7 @@ body {
     font-weight: bold;
     border: none;
     border-radius: 12px;
-    color: white; /* white text inside */
+    color: white;
     cursor: pointer;
     transition: all 0.3s ease;
   }

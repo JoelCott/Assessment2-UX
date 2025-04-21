@@ -120,12 +120,11 @@ a.button {
   accent-color: #00bcd4;
 }
 
-/* Make sure Custom label looks like the rest */
 #customLabel {
   font-size: 18px;
   font-weight: 600;
   font-family: 'Urbanist', sans-serif;
-  margin: 0; /* Remove weird spacing if any */
+  margin: 0;
 }
 
 .popup-overlay {
@@ -240,7 +239,7 @@ a.button {
   width: 200px;
   padding: 10px;
   margin-top: 10px;
-  background-color: green;
+  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 25px;
