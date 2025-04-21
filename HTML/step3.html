@@ -39,7 +39,6 @@
       <h3>Parking Session Details:</h3>
       <p><i class="fas fa-map-marker-alt"></i> <b>Location:</b> <span class="highlight-value" id="location-text">...</span></p>
       <p><i class="fas fa-clock"></i> <b>Duration:</b> <span class="highlight-value" id="duration-text">...</span></p>
-      <p><i class="fas fa-pound-sign"></i> <b>Cost:</b> <span class="highlight-value" id="cost-text">...</span></p>
       <p><i class="fas fa-car"></i> <b>Vehicle:</b> <span class="highlight-value" id="vehicle-text">YK24 YBL </span></p>
 
       <div class="button-row">
@@ -58,6 +57,38 @@
         </label>
       </div>
     </div>
+
+    <div class="popup-overlay" id="extendPopup">
+      <div class="popup-content">
+        <h3 style="color: black;">How long would you like to extend your session?</h3>
+        <input 
+          type="number" 
+          id="extendInput" 
+          placeholder="Enter minutes (multiples of 30)" 
+          step="30" 
+          min="30"
+          class="styled-input"
+        />
+
+        <div class="popup-buttons">
+          <button id="extendConfirmBtn" class="popup-btn yes">Confirm</button>
+          <button id="extendCancelBtn" class="popup-btn no">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="popup-overlay" id="endPopup">
+      <div class="popup-content">
+        <h3>Are you sure you want to end the session?</h3>
+        <div class="popup-buttons">
+          <button id="yesBtn" class="popup-btn yes">Yes</button>
+          <button id="noBtn" class="popup-btn no">No</button>
+        </div>
+      </div>
+    </div>    
+    
+    
 
     <div class="bottom-nav">
       <a class="nav-btn" href="profilePage.html"><i class="fas fa-user"></i><span><strong>Profile</strong></span></a>
