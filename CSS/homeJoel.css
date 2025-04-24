@@ -1,180 +1,194 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  a.button {
-    text-decoration: none;
-    color: inherit;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  a{
-    text-decoration: none;
-    color: black;
-  }
+/* Remove default link styling for buttons */
+a.button {
+  text-decoration: none;
+  color: inherit;
+}
 
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 20px;
-  }
-  
-  .phone::before {
-    content: "";
-    width: 120px;
-    height: 6px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
-  
-  
-  .status-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px 0;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 10px;
-    font-size: 16px;
-  }
-  
-  #time {
-    font-size: 18px;
-  }
-  
-  .logo-small {
-    font-size: 33px;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-  .menu-container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .menu-button {
-    width: 180px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: cyan;
-    border-radius: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: 'Urbanist', sans-serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.1s smooth;
-  }
-  
-  .menu-button:hover {
-    background-color: rgba(0, 229, 255, 0.8);
-  }
+/* Default link style */
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  .menu-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-  }
-  
-  .menu-icon {
-    font-size: 45px;
-    margin-right: 10px;
-    margin-left: 10px;
-    color: black;
-  }
-  
-  .align-left1 {
-    align-self: flex-start;
-    margin-left: 30px;
-  }
+/* Phone container styling */
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
 
-  .align-right2 {
-    align-self: flex-end;
-    margin-right: 20px;
-  }
+/* Simulated home bar at the bottom of phone */
+.phone::before {
+  content: "";
+  width: 120px;
+  height: 6px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
 
-  .align-right3 {
-    align-self: flex-start;
-    margin-left: 30px;
-  }
-  
-  .align-right4 {
-    align-self: flex-end;
-    margin-right: 20px;
-  }
+/* Top status bar */
+.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
 
-  .align-right5 {
-    align-self: flex-start;
-    margin-left: 30px;
-  }
-  
-  .bottom-nav {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    height: 70px;
-    background-color: #d3d3d3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid rgb(189, 189, 189);
-    z-index: 3;
-  }
+/* Icon styling inside status bar */
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
 
-  .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-item i {
-    font-size: 20px;
-    color: #00abbe;
-  }
+/* Time display styling */
+#time {
+  font-size: 18px;
+}
 
-  .nav-item.sign-out i {
-    color: red;
-  }
+/* Main logo or title text */
+.logo-small {
+  font-size: 33px;
+  font-weight: bold;
+  margin-top: 15px;
+}
 
-  .nav-item span {
-    font-size: 13px;
-    margin-top: 4px;
-  }
-  
-  
-  
-  
+/* Container for menu buttons */
+.menu-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Menu button styling */
+.menu-button {
+  width: 180px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: cyan;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Urbanist', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.1s smooth;
+}
+
+/* Menu button hover effect */
+.menu-button:hover {
+  background-color: rgba(0, 229, 255, 0.8);
+}
+
+/* Menu item row layout */
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Icon inside a menu item */
+.menu-icon {
+  font-size: 45px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+}
+
+/* Alignment utility classes for positioning items */
+.align-left1 {
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+.align-right2 {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.align-right3 {
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+.align-right4 {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.align-right5 {
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+/* Bottom navigation bar */
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: 70px;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgb(189, 189, 189);
+  z-index: 3;
+}
+
+/* Navigation item styling */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Icon inside nav item */
+.nav-item i {
+  font-size: 20px;
+  color: #00abbe;
+}
+
+/* Special color for sign-out icon */
+.nav-item.sign-out i {
+  color: red;
+}
+
+/* Label text below nav icons */
+.nav-item span {
+  font-size: 13px;
+  margin-top: 4px;
+}

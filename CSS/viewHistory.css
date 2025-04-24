@@ -9,6 +9,7 @@ body {
   height: 100vh;
 }
 
+/* Phone container styling */
 .phone {
   width: 350px;
   height: 700px;
@@ -21,6 +22,7 @@ body {
   overflow: hidden;
 }
 
+/* Top bar indicator in phone */
 .phone::before {
   content: "";
   width: 120px;
@@ -33,12 +35,14 @@ body {
   transform: translateX(-50%);
 }
 
+/* Content section styling */
 .content {
   padding: 0 20px;
   flex-grow: 1;
   overflow-y: auto;
 }
 
+/* Section title styling */
 .content h2.section-title {
   font-size: 20px;
   font-weight: bold;
@@ -46,6 +50,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Status bar inside the phone */
 .status-bar {
   display: flex;
   justify-content: space-between;
@@ -54,6 +59,7 @@ body {
   font-size: 14px;
 }
 
+/* Small logo text styling */
 .logo-small {
   font-size: 12px;
   font-weight: bold;
@@ -61,12 +67,14 @@ body {
   margin: 5px 0;
 }
 
+/* Title section styling */
 .title-section {
   text-align: center;
   padding: 0 20px;
   margin-top: 5px;
 }
 
+/* Back button styling */
 .back-btn {
   display: block;
   font-size: 18px;
@@ -78,12 +86,14 @@ body {
   padding: 5px 0;
 }
 
+/* Page title styling */
 .page-title {
   font-size: 35px;
   font-weight: bold;
   margin: 10px 0 20px;
 }
 
+/* Bottom navigation bar styling */
 .bottom-nav {
   position: absolute;
   bottom: 20px;
@@ -96,6 +106,7 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation button styling */
 .nav-btn {
   display: flex;
   flex-direction: column;
@@ -106,15 +117,18 @@ body {
   font-weight: bold;
 }
 
+/* Icon styling in nav buttons */
 .nav-btn i {
   font-size: 20px;
   color: #00abbe;
 }
 
+/* Label styling for nav buttons */
 .nav-btn span {
   margin-top: 4px;
 }
 
+/* Session header grid layout */
 .session-header {
   display: grid;
   grid-template-columns: 1fr 2.5fr 1fr;
@@ -123,12 +137,13 @@ body {
   padding: 0 5px;
 }
 
+/* Session header icon styling */
 .session-header i {
   font-size: 28px;
   color: #00abbe;
 }
 
-
+/* Session row grid layout */
 .session-row {
   display: grid;
   grid-template-columns: 1fr 2.5fr 1fr;
@@ -141,14 +156,17 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Cell padding */
 .cell {
   padding: 0 4px;
 }
 
+/* Bold text styling */
 .bold {
   font-weight: bold;
 }
 
+/* Light italic text styling */
 .light {
   font-style: italic;
   font-size: 13px;

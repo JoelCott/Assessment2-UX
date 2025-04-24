@@ -1,212 +1,234 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 10px;
-  }
-  
-  .phone::before {
-    content: "";
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-  }
-  
-  .status-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 0;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  #time {
-    font-size: 18px;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 10px;
-    font-size: 16px;
-  }
-  
-  .logo-small {
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 12px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 10px 0;
-  }
-  
-  .title-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .title-row h1 {
-    font-size: 36px;
-    margin: 0;
-    margin-bottom: 50px;
-  }
-  
-  .accessibility-icon {
-    font-size: 28px;
-    margin: 0;
-    margin-top: -45px;
-  }  
-  
-  .scrollable-content {
-    flex-grow: 1;
-    overflow-y: auto;
-    width: 100%;
-    padding: 0 20px 20px;
-    box-sizing: border-box;
-  }
-  
-  .accessibility-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .section-title {
-    font-weight: 600;
-    font-size: 20px;
-    align-self: flex-start;
-  }
-  
-  .font-size-controls {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .font-size-controls button {
-    background-color: #00abbe;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 16px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-  }
-  
-  .font-size-controls button:hover {
-    transform: scale(1.05);
-  }
-  
-  .toggle-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #e0e0e0;
-    padding: 10px 14px;
-    border-radius: 20px;
-    width: 100%;
-    font-weight: 600;
-    font-size: 16px;
-    position: relative;
-  }
-  
-  .toggle-label input[type="checkbox"] {
-    display: none;
-  }
-  
-  .toggle-slider {
-    width: 40px;
-    height: 20px;
-    background-color: grey;
-    border-radius: 20px;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .toggle-slider::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    border-radius: 50%;
-    transition: transform 0.2s ease;
-  }
-  
-  .toggle-input:checked + .toggle-slider {
-    background-color: #00abbe;
-  }
-  
-  .toggle-input:checked + .toggle-slider::before {
-    transform: translateX(20px);
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .bottom-nav {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #d3d3d3;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-btn i {
-    font-size: 20px;
-    color: #00abbe;
-  }
-  
-  .nav-btn span {
-    margin-top: 4px;
-  }
-  
-  
-  
-  
+/* Phone container styling */
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+/* Home indicator (bottom bar) simulation */
+.phone::before {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Top status bar inside the phone */
+.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Time text styling */
+#time {
+  font-size: 18px;
+}
+
+/* Icons in the status bar */
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* Small logo text styling */
+.logo-small {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* Container for title and icon */
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Title inside title-row with adjusted spacing */
+.title-row h1 {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+/* Accessibility icon styling */
+.accessibility-icon {
+  font-size: 28px;
+  margin: 0;
+  margin-top: -45px;
+}
+
+/* Scrollable content area inside the phone */
+.scrollable-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  width: 100%;
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+}
+
+/* Accessibility section container */
+.accessibility-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Section title text */
+.section-title {
+  font-weight: 600;
+  font-size: 20px;
+  align-self: flex-start;
+}
+
+/* Font size adjustment buttons */
+.font-size-controls {
+  display: flex;
+  gap: 15px;
+}
+
+/* Style for each font size button */
+.font-size-controls button {
+  background-color: #00abbe;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect for font size buttons */
+.font-size-controls button:hover {
+  transform: scale(1.05);
+}
+
+/* Container for toggle switch label and text */
+.toggle-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 10px 14px;
+  border-radius: 20px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+}
+
+/* Hide the default checkbox input */
+.toggle-label input[type="checkbox"] {
+  display: none;
+}
+
+/* Toggle switch background */
+.toggle-slider {
+  width: 40px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Circle inside the toggle switch */
+.toggle-slider::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+/* Toggle ON state - background color */
+.toggle-input:checked + .toggle-slider {
+  background-color: #00abbe;
+}
+
+/* Toggle ON state - move circle to the right */
+.toggle-input:checked + .toggle-slider::before {
+  transform: translateX(20px);
+}
+
+/* Bottom navigation bar */
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #d3d3d3;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation button container */
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Navigation icon styling */
+.nav-btn i {
+  font-size: 20px;
+  color: #00abbe;
+}
+
+/* Navigation text label */
+.nav-btn span {
+  margin-top: 4px;
+}

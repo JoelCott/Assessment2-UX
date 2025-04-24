@@ -8,11 +8,13 @@ body {
   font-family: 'Urbanist', sans-serif;
 }
 
+/* Make anchor buttons inherit color and remove underline */
 a.button {
   text-decoration: none;
   color: inherit;
 }
 
+/* Main phone container simulating a mobile frame */
 .phone {
   width: 350px;
   height: 700px;
@@ -27,6 +29,7 @@ a.button {
   padding-top: 10px;
 }
 
+/* Top status bar: flexible layout with padding */
 .status-bar {
   width: 100%;
   display: flex;
@@ -38,16 +41,19 @@ a.button {
   box-sizing: border-box;
 }
 
+/* Icons container inside status bar */
 .icons {
   display: flex;
   gap: 10px;
   font-size: 16px;
 }
 
+/* Time text size in status bar */
 #time {
   font-size: 18px;
 }
 
+/* Back button positioned absolutely near the top-left */
 .backButton {
   position: absolute;
   left: 30px;
@@ -58,12 +64,14 @@ a.button {
   color: black;
 }
 
+/* Wrapper for the title text */
 .title {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
+/* Welcome message style */
 .welcome {
   font-family: 'Urbanist', sans-serif;
   font-size: 15px;
@@ -72,6 +80,7 @@ a.button {
   margin-bottom: 5px;
 }
 
+/* App name display: big, bold text */
 .app-name {
   font-family: 'Urbanist', sans-serif;
   font-size: 33px;
@@ -79,13 +88,15 @@ a.button {
   color: black;
 }
 
+/* Container for login section */
 #login-container {
   margin-top: 10px;
 }
 
+/* General button style (used for login/register) */
 .button {
   width: 250px;
-  height: 5px;
+  height: 5px; /* Note: this might be too short for usability */
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -104,10 +115,12 @@ a.button {
   box-shadow: none;
 }
 
+/* Button hover effect */
 .button:hover {
   background: rgba(0, 255, 255, 0.8);
 }
 
+/* Text for login prompt */
 .login-text {
   font-family: 'Urbanist', sans-serif;
   font-size: 18px;
@@ -117,6 +130,7 @@ a.button {
   text-align: left;
 }
 
+/* Actual login button */
 #logbutton {
   background-color: #28a745;
   width: 150px;
@@ -134,10 +148,12 @@ a.button {
   box-shadow: none;
 }
 
+/* Hover style for login button */
 #logbutton:hover {
   background-color: #218838;
 }
 
+/* Text below login for those without an account */
 #noAccount {
   font-family: 'Urbanist', sans-serif;
   font-size: 17px;
@@ -148,6 +164,7 @@ a.button {
   margin-right: auto;
 }
 
+/* Link for signup or actions with blue highlight */
 #blue {
   color: blue;
   font-weight: bold;
@@ -155,6 +172,7 @@ a.button {
   text-decoration: none;
 }
 
+/* Bottom iPhone-style swipe-up bar */
 .home-indicator {
   width: 120px;
   height: 5px;

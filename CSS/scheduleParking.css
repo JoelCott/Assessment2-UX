@@ -8,11 +8,13 @@ body {
   font-family: 'Urbanist', sans-serif;
 }
 
+/* Reset anchor button styles */
 a.button {
   text-decoration: none;
   color: inherit;
 }
 
+/* Phone container (mobile frame simulation) */
 .phone {
   width: 350px;
   height: 700px;
@@ -27,6 +29,7 @@ a.button {
   padding-top: 10px;
 }
 
+/* Top status bar styling */
 .status-bar {
   width: 100%;
   display: flex;
@@ -38,6 +41,7 @@ a.button {
   box-sizing: border-box;
 }
 
+/* Optional small logo */
 .logo-small {
   font-size: 12px;
   font-weight: bold;
@@ -45,12 +49,14 @@ a.button {
   margin: 5px 0;
 }
 
+/* Section for page title or top content */
 .title-section {
   text-align: center;
   padding: 0 20px;
   margin-top: 5px;
 }
 
+/* Back button */
 .back-btn {
   display: block;
   font-size: 18px;
@@ -62,22 +68,26 @@ a.button {
   padding: 5px 0;
 }
 
+/* Page main title */
 .page-title {
   font-size: 35px;
   font-weight: bold;
   margin: 5px 0;
 }
 
+/* Icon group (e.g. signal, battery, etc.) */
 .icons {
   display: flex;
   gap: 10px;
   font-size: 16px;
 }
 
+/* Clock/time display */
 #time {
   font-size: 18px;
 }
 
+/* Map preview section */
 #map {
   width: 80%;
   height: 170px;
@@ -86,6 +96,7 @@ a.button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Duration display */
 #duration {
   font-size: 25px;
   font-weight: bold;
@@ -96,7 +107,7 @@ a.button {
   margin: 25px auto 15px;
 }
 
-
+/* Time selection buttons */
 #times {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -114,12 +125,14 @@ a.button {
   font-family: 'Urbanist', sans-serif;
 }
 
+/* Custom radio button styling */
 #times input[type="radio"] {
   width: 20px;
   height: 20px;
   accent-color: #00bcd4;
 }
 
+/* Label for custom time input */
 #customLabel {
   font-size: 18px;
   font-weight: 600;
@@ -127,6 +140,7 @@ a.button {
   margin: 0;
 }
 
+/* Overlay for popup modals */
 .popup-overlay {
   display: none;
   position: fixed;
@@ -140,6 +154,7 @@ a.button {
   z-index: 999;
 }
 
+/* Content box inside popup */
 .popup-content {
   background-color: white;
   padding: 20px;
@@ -149,6 +164,7 @@ a.button {
   max-width: 300px;
 }
 
+/* Numeric input inside popup */
 .popup-content input[type="number"] {
   padding: 10px;
   border-radius: 10px;
@@ -159,12 +175,14 @@ a.button {
   border: 2px solid #ccc;
 }
 
+/* Layout for popup buttons */
 .popup-buttons {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
 
+/* Generic popup button */
 .popup-btn {
   flex: 1;
   padding: 10px;
@@ -175,20 +193,24 @@ a.button {
   font-size: 16px;
 }
 
+/* Confirmation (yes) button */
 .popup-btn.yes {
   background-color: #28a745;
   color: white;
 }
 
+/* Decline (no) button */
 .popup-btn.no {
   background-color: #dc3545;
   color: white;
 }
 
-#customInput{
+/* Custom input size for mobile */
+#customInput {
   width: 220px;
 }
 
+/* Booking form layout */
 .booking-section {
   display: flex;
   justify-content: center;
@@ -200,6 +222,7 @@ a.button {
   margin-right: auto;
 }
 
+/* Wrapper for each booking input */
 .booking-input {
   display: flex;
   flex-direction: column;
@@ -207,6 +230,7 @@ a.button {
   width: 100%;
 }
 
+/* Input field label */
 .input-label {
   font-size: 18px;
   font-weight: 600;
@@ -216,7 +240,7 @@ a.button {
   margin-left: 10px;
 }
 
-
+/* Booking input field */
 .input-box {
   padding: 10px 12px;
   background-color: #00bcd4;
@@ -231,10 +255,12 @@ a.button {
   width: 130px;
 }
 
+/* Placeholder text styling */
 .input-box::placeholder {
   color: white;
 }
 
+/* Submit button style */
 .button {
   width: 200px;
   padding: 10px;
@@ -252,31 +278,7 @@ a.button {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Bottom app navigation bar */
 .bottom-nav {
   position: absolute;
   bottom: 20px;
@@ -289,6 +291,7 @@ a.button {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation item (text and icon) */
 .nav-btn {
   display: flex;
   flex-direction: column;
@@ -299,15 +302,18 @@ a.button {
   font-weight: bold;
 }
 
+/* Navigation icon */
 .nav-btn i {
   font-size: 20px;
   color: #00abbe;
 }
 
+/* Navigation label below icon */
 .nav-btn span {
   margin-top: 4px;
 }
 
+/* Home indicator (iPhone-style swipe bar) */
 .home-indicator {
   width: 100px;
   height: 5px;

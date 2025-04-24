@@ -1,24 +1,26 @@
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center;  
+  align-items: center;    
+  height: 100vh;         
   background-color: white;
   margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Urbanist', sans-serif;  
 }
 
+/* General link style override */
 a.button {
   text-decoration: none;
-  color: inherit;
+  color: inherit;              /* Inherit color from parent */
 }
 
+/* Simulated phone container */
 .phone {
   width: 350px;
   height: 700px;
   background-color: #d3d3d3;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;         /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Drop shadow */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +29,7 @@ a.button {
   padding-top: 10px;
 }
 
+/* Status bar across the top */
 .status-bar {
   width: 100%;
   display: flex;
@@ -38,16 +41,19 @@ a.button {
   box-sizing: border-box;
 }
 
+/* Right-side icons in the status bar */
 .icons {
   display: flex;
   gap: 10px;
   font-size: 16px;
 }
 
+/* Time display in the center or left */
 #time {
   font-size: 18px;
 }
 
+/* Back arrow button */
 .backButton {
   position: absolute;
   left: 30px;
@@ -58,12 +64,14 @@ a.button {
   color: black;
 }
 
+/* Centered title block */
 .title {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 10px;
 }
 
+/* Bar at the top for centered elements like app name */
 .top-bar {
   width: 100%;
   display: flex;
@@ -73,6 +81,7 @@ a.button {
   left: 0;
 }
 
+/* Small welcome text */
 .welcome {
   font-family: 'Urbanist', sans-serif;
   font-size: 15px;
@@ -81,7 +90,7 @@ a.button {
   margin: 0;
 }
 
-
+/* Large bold application name */
 .app-name {
   font-family: 'Urbanist', sans-serif;
   font-size: 33px;
@@ -89,10 +98,12 @@ a.button {
   color: black;
 }
 
+/* Container to hold login content */
 #login-container {
   margin-top: 30px;
 }
 
+/* Shared button styling */
 .button {
   width: 250px;
   padding: 15px;
@@ -113,10 +124,12 @@ a.button {
   box-shadow: none;
 }
 
+/* Button hover state */
 .button:hover {
   background: rgba(0, 255, 255, 0.8);
 }
 
+/* Label above login field */
 .login-text {
   font-family: 'Urbanist', sans-serif;
   font-size: 18px;
@@ -126,8 +139,9 @@ a.button {
   text-align: left;
 }
 
+/* Specific styling for login button */
 #logbutton {
-  background-color: #28a745;
+  background-color: #28a745;       /* Bootstrap-style green */
   width: 150px;
   color: white;
   margin-top: 40px;
@@ -143,10 +157,12 @@ a.button {
   box-shadow: none;
 }
 
+/* Hover effect for login button */
 #logbutton:hover {
   background-color: #218838;
 }
 
+/* Text for account suggestion ("Don't have an account?") */
 #noAccount {
   font-family: 'Urbanist', sans-serif;
   font-size: 17px;
@@ -157,6 +173,7 @@ a.button {
   margin-right: auto;
 }
 
+/* Highlighted clickable link (e.g. "Sign up") */
 #blue {
   color: blue;
   font-weight: bold;
@@ -164,6 +181,7 @@ a.button {
   text-decoration: none;
 }
 
+/* Simulated home indicator bar at bottom of screen */
 .home-indicator {
   width: 120px;
   height: 5px;

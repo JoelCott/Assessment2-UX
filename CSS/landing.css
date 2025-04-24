@@ -1,111 +1,120 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
-    margin: 0;
-  }
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;             
+  background-color: white;
+  margin: 0;
+}
 
-  a.button {
-    text-decoration: none;
-    color: inherit;
-  }  
-  
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 10px;
-  }
-  
-  .status-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 0;
-    font-size: 14px;
-    font-family: sans-serif;
-    box-sizing: border-box;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 10px;
-    font-size: 16px;
-  }
-  
-  #time {
-    font-size: 18px;
-  }
-  
-  .title {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-  
-  .welcome {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
-  }
-  
-  .app-name {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-    color: black;
-  }   
-  
-  
-  .buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    flex-grow: 1;
-    justify-content: center;
-  }
-  
-  .button {
-    width: 200px;
-    padding: 15px;
-    margin: 10px;
-    background: cyan;
-    border-radius: 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px green;
-    font-family: sans-serif;
-    transition: background 0.3s ease;
-    display: block;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .button:hover {
-    background: rgba(0, 255, 255, 0.8);
-  }
-  
-  
-  .home-indicator {
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-  }
-  
+/* Link/button reset to remove underline and inherit color */
+a.button {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Phone mockup container */
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;            /* Top padding inside the phone */
+}
+
+/* Top status bar (time, icons, etc.) */
+.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container for right-side status icons (e.g., WiFi, battery) */
+.icons {
+  display: flex;
+  gap: 10px;                    /* Space between icons */
+  font-size: 16px;
+}
+
+/* Time display in the status bar */
+#time {
+  font-size: 18px;
+}
+
+/* Container for welcome title */
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* Subtitle "Welcome" text */
+.welcome {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+/* Main application name styling */
+.app-name {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: black;
+}
+
+/* Button wrapper to align and space buttons */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Shared button styling */
+.button {
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  background: cyan;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px green;
+  font-family: sans-serif;
+  transition: background 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background: rgba(0, 255, 255, 0.8);
+}
+
+/* Home indicator bar at the bottom of the phone */
+.home-indicator {
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+}

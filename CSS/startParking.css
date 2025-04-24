@@ -1,257 +1,262 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-  }
+/* Phone container simulating a mobile screen */
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 
-  .phone::before {
-    content: "";
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+/* Simulated iPhone-style home indicator */
+.phone::before {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 0;
-    font-size: 14px;
-  }
+/* Status bar layout (e.g. time, battery) */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0;
+  font-size: 14px;
+}
 
-  .logo-small {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin: 5px 0;
-  }
-  
-  .title-section {
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 5px;
-  }
-  
-  .back-btn {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 0;
-  }
+/* Tiny logo or header text */
+.logo-small {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
 
-  .page-title {
-    font-size: 35px;
-    font-weight: bold;
-    margin: 5px 0;
-  }
+/* Title container with padding */
+.title-section {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 5px;
+}
 
-  .progress-bar {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin: 8px 0;
-  }
+/* Back button styling */
+.back-btn {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 0;
+}
 
-  .progress-step {
-    width: 20px;
-    height: 5px;
-    background-color: lightgray;
-    border-radius: 4px;
-  }
+/* Main page title */
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 5px 0;
+}
 
-  .progress-step.active {
-    background-color: #00abbe;
-  }
+/* Progress bar layout (e.g. steps) */
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+}
 
-  .step-label {
-    font-size: 16px;
-    color: black;
-  }
+/* Each progress step box */
+.progress-step {
+  width: 20px;
+  height: 5px;
+  background-color: lightgray;
+  border-radius: 4px;
+}
 
-  .content {
-    padding: 0 20px;
-    flex-grow: 1;
-    overflow-y: auto;
-  }
+/* Active step highlight */
+.progress-step.active {
+  background-color: #00abbe;
+}
 
-  .content h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-  }
+/* Label under or near steps */
+.step-label {
+  font-size: 16px;
+  color: black;
+}
 
-  .map-container iframe {
-    border: 0;
-    border-radius: 12px;
-    width: 300px;
-    height: 180px;
-    pointer-events: auto;
-  }
+/* Scrollable content container */
+.content {
+  padding: 0 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
 
-  .map-container iframe {
-    border: 0;
-    border-radius: 12px;
-    width: 300px;
-    height: 180px;
-  }
+/* Headings inside content */
+.content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
 
-  .radio-group.grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 15px;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+/* Embedded Google Maps container */
+.map-container iframe {
+  border: 0;
+  border-radius: 12px;
+  width: 300px;
+  height: 180px;
+  pointer-events: auto;
+}
 
-  .radio-group input[type="radio"] {
-    accent-color: #00abbe;
-  }
-  
-  .popup-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
-  
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    padding-top: 40px;
-  }
-  
-  .popup-content h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .popup-content input {
-    width: 60%;
-    padding: 8px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    font-size: 16px;
-  }
-  
-  .popup-content button {
-    background-color: #00abbe;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    cursor: pointer;
-  }  
+/* Grid layout for radio button group */
+.radio-group.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 15px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-  .popup-back-btn {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: #00abbe;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  
+/* Style for radio input color */
+.radio-group input[type="radio"] {
+  accent-color: #00abbe;
+}
 
-  .confirm-btn {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 20px;
-    padding: 12px 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 60%;
-    margin: 10px auto 20px auto;
-    margin-top: -9px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    color: white;
-    display: block;
-    text-align: center;
-  }
-  
+/* Popup overlay (background dim effect) */
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
 
+/* Actual popup box */
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-top: 40px;
+}
 
+/* Popup heading */
+.popup-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+/* Popup input field */
+.popup-content input {
+  width: 60%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
 
+/* Popup action button */
+.popup-content button {
+  background-color: #00abbe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
+/* Popup back/close button */
+.popup-back-btn {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #00abbe;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
 
+/* Confirm or submit button styling */
+.confirm-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 60%;
+  margin: 10px auto 20px auto;
+  margin-top: -9px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+}
 
+/* Bottom navigation bar fixed to bottom */
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #d3d3d3;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+/* Nav button style (icon + label) */
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+/* Icon inside nav button */
+.nav-btn i {
+  font-size: 20px;
+  color: #00abbe;
+}
 
-
-
-
-  .bottom-nav {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #d3d3d3;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .nav-btn i {
-    font-size: 20px;
-    color: #00abbe;
-  }
-
-  .nav-btn span {
-    margin-top: 4px;
-  }
+/* Label inside nav button */
+.nav-btn span {
+  margin-top: 4px;
+}

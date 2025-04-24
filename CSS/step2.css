@@ -1,347 +1,355 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-  }
+/* Simulating a phone screen, flex layout with rounded corners */
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 
-  .phone::before {
-    content: "";
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+/* Simulated home indicator (for iPhone-like screens) */
+.phone::before {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 0;
-    font-size: 14px;
-  }
+/* Status bar content, flex to arrange left-right aligned items */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0;
+  font-size: 14px;
+}
 
-  .logo-small {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin: 5px 0;
-  }
-  
-  .title-section {
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 5px;
-  }
-  
-  .back-btn {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 0;
-  }
+/* Small logo text, bold and centered */
+.logo-small {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
 
-  .page-title {
-    font-size: 35px;
-    font-weight: bold;
-    margin: 5px 0;
-  }
+/* Title section with padding and centered text */
+.title-section {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 5px;
+}
 
-  .progress-bar {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin: 8px 0;
-  }
+/* Back button, bold and left-aligned */
+.back-btn {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 0;
+}
 
-  .progress-step {
-    width: 20px;
-    height: 5px;
-    background-color: lightgray;
-    border-radius: 4px;
-  }
+/* Main page title, large and bold */
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 5px 0;
+}
 
-  .progress-step.active {
-    background-color: #00abbe;
-  }
+/* Progress bar layout, flex with spacing between steps */
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+}
 
-  .step-label {
-    font-size: 16px;
-    color: black;
-  }
+/* Style for each progress step */
+.progress-step {
+  width: 20px;
+  height: 5px;
+  background-color: lightgray;
+  border-radius: 4px;
+}
 
-  .content {
-    padding: 0 20px;
-    flex-grow: 1;
-    overflow-y: auto;
-  }
-  
-  .highlight-value {
-    color: #00abbe;
-    font-weight: bold;
-  }
-  
+/* Highlight active progress step */
+.progress-step.active {
+  background-color: #00abbe;
+}
 
-  .content h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
+/* Label text for progress steps */
+.step-label {
+  font-size: 16px;
+  color: black;
+}
 
-  .map-container iframe {
-    border: 0;
-    border-radius: 12px;
-    width: 300px;
-    height: 180px;
-    pointer-events: auto;
-  }
+/* Content section, with padding and scrollable area */
+.content {
+  padding: 0 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
 
-  .map-container iframe {
-    border: 0;
-    border-radius: 12px;
-    width: 300px;
-    height: 180px;
-  }
+/* Highlighted text value inside the content area */
+.highlight-value {
+  color: #00abbe;
+  font-weight: bold;
+}
 
-  .radio-group.grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 15px;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+/* Content headings inside the content area */
+.content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 
-  .radio-group input[type="radio"] {
-    accent-color: #00abbe;
-  }
-  
-  .popup-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
-  
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    padding-top: 40px;
-  }
-  
-  
-  .popup-content h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .popup-content input {
-    width: 60%;
-    padding: 8px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    font-size: 16px;
-  }
-  f
-  .popup-content button {
-    background-color: #00abbe;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }  
+/* Embedded map iframe container */
+.map-container iframe {
+  border: 0;
+  border-radius: 12px;
+  width: 300px;
+  height: 180px;
+  pointer-events: auto;
+}
 
-  .popup-back-link {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #00abbe;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
-  
-  .popup-submit-btn {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 20px;
-    padding: 12px 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    display: block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .confirm-btn {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 20px;
-    padding: 12px 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    display: block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    align-self: center;
-  }
-  
-  
+/* Radio group layout with a grid system (2 columns) */
+.radio-group.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 15px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-  .payment-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 15px;
-    margin-bottom: 10px;
-  }  
-  
-  .switch-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 6px 10px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    font-size: 13px;
-    height: 55px;
-    box-sizing: border-box;
-  }
-  
-  
-  
-  .logo-text img {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .switch-label input[type="checkbox"] {
-    display: none;
-  }
-  
-  .slider {
-    width: 40px;
-    height: 22px;
-    background-color: #ccc;
-    border-radius: 34px;
-    position: relative;
-    transition: background-color 0.3s;
-  }
-  
-  .slider::before {
-    content: "";
-    position: absolute;
-    height: 16px;
-    width: 16px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.3s;
-  }
-  
-  .switch-label input:checked + .slider {
-    background-color: #00abbe;
-  }
-  
-  .switch-label input:checked + .slider::before {
-    transform: translateX(18px);
-  }
-  
-  
+/* Custom accent color for radio buttons */
+.radio-group input[type="radio"] {
+  accent-color: #00abbe;
+}
 
+/* Popup overlay background with dim effect */
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
 
+/* Popup content box with white background and shadow */
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-top: 40px;
+}
 
+/* Heading inside popup content */
+.popup-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+/* Popup input fields with rounded corners */
+.popup-content input {
+  width: 60%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
 
+/* Button in the popup content, styled with color */
+.popup-content button {
+  background-color: #00abbe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+/* Back link in the popup (to go back) */
+.popup-back-link {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00abbe;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+/* Submit button with green background in the popup */
+.popup-submit-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
+/* Confirm button in content area with green background */
+.confirm-btn {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  align-self: center;
+}
 
+/* Payment options grid layout with two columns */
+.payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 15px;
+  margin-bottom: 10px;
+}
 
+/* Switch label styling for toggle elements */
+.switch-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 13px;
+  height: 55px;
+  box-sizing: border-box;
+}
 
-  .bottom-nav {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #d3d3d3;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
+/* Logo image inside the switch label */
+.logo-text img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
 
-  .nav-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
+/* Hide the checkbox input inside the switch label */
+.switch-label input[type="checkbox"] {
+  display: none;
+}
 
-  .nav-btn i {
-    font-size: 20px;
-    color: #00abbe;
-  }
+/* Slider design for the switch element */
+.slider {
+  width: 40px;
+  height: 22px;
+  background-color: #ccc;
+  border-radius: 34px;
+  position: relative;
+  transition: background-color 0.3s;
+}
 
-  .nav-btn span {
-    margin-top: 4px;
-  }
+/* Slider circle (the draggable part) */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Slider background color when the switch is on */
+.switch-label input:checked + .slider {
+  background-color: #00abbe;
+}
+
+/* Move the slider circle when checked */
+.switch-label input:checked + .slider::before {
+  transform: translateX(18px);
+}
+
+/* Bottom navigation bar fixed at the bottom */
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #d3d3d3;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each navigation button (icon + label) */
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Icon inside the nav button */
+.nav-btn i {
+  font-size: 20px;
+  color: #00abbe;
+}
+
+/* Label below the icon in the nav button */
+.nav-btn span {
+  margin-top: 4px;
+}

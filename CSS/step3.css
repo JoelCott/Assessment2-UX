@@ -1,305 +1,301 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Urbanist', sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .phone {
-    width: 350px;
-    height: 700px;
-    background-color: #d3d3d3;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-  }
+/* Phone container styling */
+.phone {
+  width: 350px;
+  height: 700px;
+  background-color: #d3d3d3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 
-  .phone::before {
-    content: "";
-    width: 120px;
-    height: 5px;
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+/* Phone top bar indicator */
+.phone::before {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 0;
-    font-size: 14px;
-  }
+/* Status bar inside the phone */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0;
+  font-size: 14px;
+}
 
-  .logo-small {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin: 5px 0;
-  }
-  
-  .title-section {
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 5px;
-  }
-  
-  .back-btn {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 0;
-  }
+/* Small logo text styling */
+.logo-small {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
 
-  .page-title {
-    font-size: 35px;
-    font-weight: bold;
-    margin: 5px 0;
-  }
+/* Title section styling */
+.title-section {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 5px;
+}
 
-  .progress-bar {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin: 8px 0;
-  }
+/* Back button styling */
+.back-btn {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 0;
+}
 
-  .progress-step {
-    width: 20px;
-    height: 5px;
-    background-color: lightgray;
-    border-radius: 4px;
-  }
+/* Page title styling */
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 5px 0;
+}
 
-  .progress-step.active {
-    background-color: #00abbe;
-  }
+/* Progress bar styling */
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+}
 
-  .step-label {
-    font-size: 16px;
-    color: black;
-  }
+.progress-step {
+  width: 20px;
+  height: 5px;
+  background-color: lightgray;
+  border-radius: 4px;
+}
 
-  .content {
-    padding: 0 20px;
-    flex-grow: 1;
-    overflow-y: auto;
-  }
+.progress-step.active {
+  background-color: #00abbe;
+}
 
-  .content i {
-    font-size: 30px;
-    color: black;
-    margin-right: 5px;
-  }
-  
-  
-  .highlight-value {
-    color: #00abbe;
-    font-weight: bold;
-  }
+.step-label {
+  font-size: 16px;
+  color: black;
+}
 
-  .content h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
+/* Content section styling */
+.content {
+  padding: 0 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
 
- 
-  .extend-btn {
-    background-color: #00abbe;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-right: 10px;
-  }
+/* Highlighted value styling */
+.highlight-value {
+  color: #00abbe;
+  font-weight: bold;
+}
 
-  .styled-input {
-    width: 60%;
-    padding: 12px 15px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    margin: 10px 0 20px;
-    outline: none;
-    transition: 0.3s;
-  }
-  
-  .styled-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
-  }
+/* Content header styling */
+.content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 
-  
-  .end-btn {
-    background-color: #e53935;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
+/* Button styling */
+.extend-btn, .end-btn {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
-  .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  .popup-content h3 {
-    color: black;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .popup-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .popup-btn {
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .popup-btn.yes {
-    background-color: green;
-  }
-  
-  .popup-btn.no {
-    background-color: red;
-  }
-  
-  .popup-btn:hover {
-    opacity: 0.9;
-  }
-    
-  
-  .button-row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  
+/* Extend button color */
+.extend-btn {
+  background-color: #00abbe;
+}
 
-  .notify-options {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 25px;
-  }
-  .notify-options i.fa-bell {
-    font-size: 35px;
-    color: #00abbe;
-  }
-  
-  
-  .radio-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .radio-label i {
-    font-size: 20px;
-    color: #00abbe;
-  }
-  
-  .radio-label input[type="radio"] {
-    accent-color: #00abbe;
-    width: 18px;
-    height: 18px;
-  }
-  
+/* End button color */
+.end-btn {
+  background-color: #e53935;
+}
 
+/* Styled input field */
+.styled-input {
+  width: 60%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  margin: 10px 0 20px;
+  outline: none;
+  transition: 0.3s;
+}
 
+/* Focused input field */
+.styled-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
 
+/* Popup overlay styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
+/* Popup content box styling */
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+/* Popup button group styling */
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
 
+/* Popup button styling */
+.popup-btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+/* Popup button colors */
+.popup-btn.yes {
+  background-color: green;
+}
 
+.popup-btn.no {
+  background-color: red;
+}
 
+/* Popup button hover effect */
+.popup-btn:hover {
+  opacity: 0.9;
+}
 
+/* Button row styling */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
-  .bottom-nav {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    background-color: #d3d3d3;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
+/* Notification options list */
+.notify-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+}
 
-  .nav-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
+.notify-options i.fa-bell {
+  font-size: 35px;
+  color: #00abbe;
+}
 
-  .nav-btn i {
-    font-size: 20px;
-    color: #00abbe;
-  }
+/* Radio label styling */
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .nav-btn span {
-    margin-top: 4px;
-  }
+/* Radio input icon styling */
+.radio-label i {
+  font-size: 20px;
+  color: #00abbe;
+}
+
+/* Radio button input styling */
+.radio-label input[type="radio"] {
+  accent-color: #00abbe;
+  width: 18px;
+  height: 18px;
+}
+
+/* Bottom navigation bar styling */
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #d3d3d3;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation button styling */
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Navigation button icon styling */
+.nav-btn i {
+  font-size: 20px;
+  color: #00abbe;
+}
+
+/* Navigation button label styling */
+.nav-btn span {
+  margin-top: 4px;
+}

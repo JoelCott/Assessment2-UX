@@ -1,13 +1,14 @@
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center; 
+  align-items: center;      
+  height: 100vh;               
   background-color: white;
   margin: 0;
   font-family: 'Urbanist', sans-serif;
 }
 
+/* Main phone-like container */
 .phone {
   width: 350px;
   height: 700px;
@@ -22,6 +23,7 @@ body {
   padding-top: 10px;
 }
 
+/* Top status bar (battery, time, etc.) */
 .status-bar {
   width: 100%;
   display: flex;
@@ -33,16 +35,19 @@ body {
   box-sizing: border-box;
 }
 
+/* Right-side icons in the status bar */
 .icons {
   display: flex;
   gap: 10px;
   font-size: 16px;
 }
 
+/* Center time display */
 #time {
   font-size: 18px;
 }
 
+/* Small logo or brand label */
 .logo-small {
   font-size: 12px;
   font-weight: bold;
@@ -50,6 +55,7 @@ body {
   margin-bottom: 12px;
 }
 
+/* Container for the page title and optional back button */
 .title-section {
   display: flex;
   flex-direction: column;
@@ -59,6 +65,7 @@ body {
   width: 100%;
 }
 
+/* Back button (top-left corner) */
 .back-btn {
   position: absolute;
   top: 0;
@@ -70,6 +77,7 @@ body {
   padding: 5px 0;
 }
 
+/* Row that holds the title and icon side-by-side */
 .page-title-row {
   display: flex;
   align-items: center;
@@ -78,10 +86,7 @@ body {
   margin-top: 35px;
 }
 
-
-
-
-
+/* Main page title styling */
 .page-title {
   font-size: 37px;
   font-weight: bold;
@@ -91,12 +96,14 @@ body {
   text-align: center;
 }
 
+/* Icon next to the page title */
 .profile-icon {
   font-size: 30px;
   color: black;
   margin-left: 10px;
 }
 
+/* Container for user info content */
 #info {
   width: 100%;
   padding: 0 20px;
@@ -104,6 +111,7 @@ body {
   margin-top: 10px;
 }
 
+/* Each row in the user info section */
 .info-row {
   padding: 18px 0;
   margin: 12px 0;
@@ -113,18 +121,21 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+/* Label on the left side of the row */
 .label {
   font-weight: bold;
   font-size: 18px;
   flex: 1;
 }
 
+/* Value on the right side of the row */
 .value {
   flex: 2;
   font-size: 18px;
   color: #333;
 }
 
+/* Edit button for a row */
 .edit-button {
   background: none;
   color: #00bcd4;
@@ -137,11 +148,13 @@ body {
   gap: 5px;
 }
 
+/* Optional icon in the edit button */
 .edit-button i {
   font-style: normal;
   font-size: 16px;
 }
 
+/* Shared button style for wallet and notifications */
 #wallet,
 #bell {
   display: flex;
@@ -159,12 +172,14 @@ body {
   text-decoration: none;
 }
 
+/* Icons inside wallet and bell buttons */
 #wallet i,
 #bell i {
   font-size: 20px;
   color: black;
 }
 
+/* Bottom navigation bar */
 .bottom-nav {
   position: absolute;
   bottom: 20px;
@@ -177,6 +192,7 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Individual bottom nav buttons */
 .nav-btn {
   display: flex;
   flex-direction: column;
@@ -187,15 +203,18 @@ body {
   font-weight: bold;
 }
 
+/* Icons inside bottom nav buttons */
 .nav-btn i {
   font-size: 20px;
   color: #00abbe;
 }
 
+/* Text label under bottom nav icon */
 .nav-btn span {
   margin-top: 4px;
 }
 
+/* Simulated iPhone-style home indicator bar */
 .home-indicator {
   width: 100px;
   height: 5px;
