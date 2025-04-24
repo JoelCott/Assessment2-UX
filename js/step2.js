@@ -1,5 +1,6 @@
 const toggles = document.querySelectorAll('.payment-toggle');
 
+// When a payment toggle is changed, uncheck all other toggles
 toggles.forEach(toggle => {
   toggle.addEventListener('change', () => {
     if (toggle.checked) {
@@ -12,6 +13,7 @@ toggles.forEach(toggle => {
   });
 });
 
+// Calculate and display the parking duration and cost
 document.addEventListener("DOMContentLoaded", function () {
   const durationPara = document.querySelector(".content p:nth-of-type(2)");
   const costPara = document.querySelector(".content p:nth-of-type(3)");
@@ -28,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Update parking details with highlighted values
 document.addEventListener("DOMContentLoaded", function () {
   const durationPara = document.querySelector(".content p:nth-of-type(2)");
   const costPara = document.querySelector(".content p:nth-of-type(3)");
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById('visa-popup');
   const submitCardBtn = document.getElementById('submit-card');
 
+  // Handle payment toggle changes, especially for Visa toggle
   toggles.forEach(toggle => {
     toggle.addEventListener('change', (e) => {
       if (toggle === visaToggle && toggle.checked) {
@@ -64,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Handle Visa card submission
   submitCardBtn.addEventListener('click', () => {
     const cardNumber = document.getElementById('card-number').value.trim();
     const expiry = document.getElementById('expiry').value.trim();
@@ -80,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
   
-  
     popup.style.display = 'none';
     visaToggle.checked = true;
   
@@ -90,9 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  
 });
 
+// Format expiry input as MM/YY
 const expiryInput = document.getElementById('expiry');
 
 expiryInput.addEventListener('input', function (e) {
@@ -104,6 +108,7 @@ expiryInput.addEventListener('input', function (e) {
   }
 });
 
+// Close Visa popup when back button is clicked
 const popup = document.getElementById('visa-popup');
 const visaToggle = document.querySelector('input[value="visa"]');
 const backBtn = document.getElementById('popup-back-btn');
@@ -113,6 +118,7 @@ backBtn.addEventListener('click', () => {
   visaToggle.checked = false;
 });
 
+// Handle payment confirmation
 document.addEventListener("DOMContentLoaded", function () {
   const confirmBtn = document.getElementById("confirm-pay-btn");
 
@@ -121,13 +127,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "step3.html";
   });
 });
-
-
-
-
-
-
-
-
-
-

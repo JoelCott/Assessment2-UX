@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Get DOM elements
   const customRadio = document.getElementById("timeCustom");
   const customLabel = document.getElementById("customLabel");
   const customPopup = document.getElementById("customPopup");
@@ -10,15 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const dateInput = document.getElementById("date");
   const timeInput = document.querySelector("input[type='time']");
 
+  // Show custom popup when custom radio is selected
   customRadio.addEventListener("change", () => {
     customPopup.style.display = "flex";
   });
 
+  // Hide custom popup when cancel button is clicked
   cancelCustom.addEventListener("click", () => {
     customPopup.style.display = "none";
     customRadio.checked = false;
   });
 
+  // Set custom duration when confirm button is clicked
   confirmCustom.addEventListener("click", () => {
     const value = parseInt(customInput.value);
     if (!isNaN(value) && value >= 30 && value % 30 === 0) {
@@ -29,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Please enter a valid custom time in 30-minute steps.");
     }
   });
-  
 
+  // Handle booking confirmation
   bookButton.addEventListener("click", () => {
     const selected = document.querySelector('input[name="time"]:checked');
     const duration = selected ? selected.nextElementSibling.textContent.trim() : null;
@@ -46,4 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "/html/homePageJoel.html";
   });
 });
-
